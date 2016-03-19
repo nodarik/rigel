@@ -1,5 +1,5 @@
-.overfow-hidden {
-    overflow: hidden
+li#wp-admin-bar-redux_options {
+    background: #008EC2 !important;
 }
 .redux-main .description {
     margin-top: 7px;

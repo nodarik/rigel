@@ -17,19 +17,14 @@ require_once(get_template_directory() . '/framework/theme-configs.php');
 }
 add_action( 'after_setup_theme', 'theme_functions' );
 function theme_functions() {
-
 add_theme_support( 'title-tag' );
-
 }
-
-
 add_filter( 'wp_title', 'custom_titles', 10, 2 );
 function custom_titles( $title, $sep ) {
-
-    //Check if custom titles are enabled from your option framework
-    if ( get_option( 'enable_custom_titles' ) === 'on' ) {
-        //Some silly example
-        $title =  $title;;
+//Check if custom titles are enabled from your option framework
+if ( get_option( 'enable_custom_titles' ) === 'on' ) {
+//Some silly example
+     $title =  $title;;
     }
 
     return $title;
@@ -262,11 +257,11 @@ require_once('framework/plugin-activation.php');
 			),
 			
 			array(
-				'name'     				=> esc_html__('cf-Post-Formats','rigel'), // The plugin name
+				'name'     				=> esc_html__('Rigel core','rigel'), // The plugin name
 				'slug'     				=> 'cf-post-formats', // The plugin slug (typically the folder name)
-				'source'   				=> 'http://rigel.radiuzz.com/plugins/cf/cf-post-formats.zip', // The plugin source
+				'source'   				=> 'http://rigel.radiuzz.com/plugins/rigel_core.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '1.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
