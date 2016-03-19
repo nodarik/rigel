@@ -1,0 +1,132 @@
+
+/* 
+*	=================================================================================================================================================
+*	GENERATED CSS FILE
+*	=================================================================================================================================================
+*/
+
+.rigel_typo_headers {
+	font-family: 'Montserrat' !important;
+}
+.rigel_typo_menu {
+	    font-family: Montserrat !important;
+}
+
+h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_large, .sub_title, .rigel_footer_contact a {
+	font-family: 'Montserrat';
+	line-height: 33px ;
+    color: #28262b;
+	letter-spacing: 0px;
+	}
+	
+.woocommerce .product p.price, .woocommerce .product span.price, .woocommerce .product form.cart .variations td.label
+	{
+		color: #28262b !important;
+	}
+
+	.rigel_menu_content_holder > ul > li > a, .header_menu > li > .my_drop > ul > li > a { 
+	font-weight: Montserrat !important;
+    font-family: Montserrat !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+	color: #28262b !important;
+
+}
+body, dl, dt, dd, ul, ol, li, pre, form, blockquote, th, td {
+	font-family: 'Source Sans Pro' ;
+	font-size: 14px ;
+    line-height: 22.4px ;
+    color: #565656 ;
+	letter-spacing: 0px !important;
+	
+}
+
+.footer-wraper .rigel_social_networks li span a {
+	font-weight: 400;
+ 
+    font-size: 17px;
+    line-height: 26px;
+	color: #28262b;
+	letter-spacing: -1px;
+}
+
+.minimal-light .esg-filterbutton, .esg-cc, .esg-sortbutton, .woocommerce .product form.cart .variations td.label, .woocommerce div.product form.cart .variations select { 
+font-family: Montserrat !important;
+}
+
+.wpb_accordion_header a, .rigel_price_ul li, #menu-word, .logo-tagline, .rigel_logo_holdred a, .achievements h4, .achievements h3, .esg-slidedown {
+font-family: 'Montserrat' !important;}
+
+.rigel_typo_body {
+	font-family: 'Source Sans Pro' ;
+	}
+
+
+
+
+
+.rigel_menu_content_holder > ul > li:hover > a {color:#b09991 !important;}
+.widget_price_filter .ui-slider .ui-slider-range, .eg-rigel-simple-shop-element-21, .eg-rigel-pricing-element-9 { background:#b09991 !important}
+.shop-item-number, .widget_price_filter .ui-slider .ui-slider-range { background:#b09991}
+.richard-skin .esg-filter-checked, .richard-skin-right .esg-navigationbutton:hover, .richard-skin-right .esg-filterbutton:hover, .richard-skin-right .esg-sortbutton:hover, .richard-skin-right .esg-sortbutton-order:hover, .richard-skin-right .esg-cartbutton-order:hover, .richard-skin-right .esg-filterbutton.selected
+ {color:#b09991 !important}
+h5.rigel_port_date, .footer-main a:hover  {color:#b09991 !important}
+.rigel_readmore_btn {color:#b09991}
+.colored { color:#b09991}
+.rigel_blog_meta a:hover {color:#b09991}
+.rigel_menu_content_holder > ul > li.current-menu-item > a, .rigel_menu_content_holder > ul > li.current-menu-parent > a{ color:#b09991 !important; }
+.header_menu > li:hover > .my_drop .current-menu-item a {color:#b09991!important;}
+.header_menu > li.current-menu-ancestor > a {color:#b09991!important;}
+.rigel_tabs li.active a, .rigel_tabs li a:hover { color:#b09991}
+.filter_button:hover {color:#b09991; text-decoration:none;}
+.filter_current { color:#b09991; }
+.woocommerce span.onsale, .woocommerce span.onsale:after { background:#b09991 !important; }
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price { color:#b09991 !important; }
+.filter_current:hover { color:#b09991; text-decoration:none;}
+.rigel_load_more:hover,.search-section i:hover,.chart-section i:hover, #searchform #searchsubmit { background:#b09991;}
+.list-star li:before {color:#b09991}
+.wpcf7-submit:hover { background:#b09991; }
+.wpcf7-validation-errors, .wpcf7-mail-sent-ok { background:#b09991;}
+.rigel_news_title a:hover { color:#b09991; }
+.rigel_widget .current-menu-item a { color:#b09991 !important}
+.rigel_widget ul:not(#cbox) li a:hover {  color:#b09991;}
+.rigel_widget ul:not(#cbox) li a:hover:before{	color:#b09991;}
+.rigel_widget .menu li li.current_page_item a, .esg-navigationbutton:hover i
+ { color:#b09991 !important}
+h3.rigel_blog_post_title a:hover { color:#b09991; }
+#wp-calendar a { color:#b09991}
+#wp-calendar caption { color:#b09991}
+.rigel_tweet a:hover { color:#b09991;}
+.rigel_tweet_time > a.twitter_time { color:#b09991; }
+.tagcloud a:hover { color:#b09991; }
+.fn a, .rigel_commente_holder h4 a { color:#b09991}
+.rigel_ticket_commentlist .comment-author  .fn{ color:#b09991;}
+.rigel_ticket_commentlist .comment-body .reply .comment-reply-link { color:#b09991; }
+.rigel_ticket_commentlist > li > .comment-body .reply .comment-reply-link { color:#b09991;}
+.rigel_footer_holder {background:transparent}
+.rigel_footer_holder {   border-top: 1px solid transparent}
+.rigel_footer_custom_content, .rigel_footer_custom_content   p, .rigel_footer_custom_content   i, 
+.rigel_footer_custom_content .rigel_soc_icons a, .rigel_footer_custom_content .rigel_soc_icons a:before, .rigel_footer_contact h3, .footer-wraper .rigel_footer_contact h5, .footer-wraper .rigel_footer_contact span a  {   color: #28262b !important}
+.rigel_footer_custom_content .rigel_soc_icons a:before{   border: 1px solid #28262b !important}
+.woocommerce-product-search input[type="submit"] { background:#b09991}
+.cart_list.product_list_widget .remove:hover { background:#b09991}
+.cart_list.product_list_widget .remove { color:#b09991 !important}
+
+
+
+
+
+.rigel_footer_custom_content  {
+background-image: url(http://rigel.radiuzz.com/wp-content/uploads/2016/01/bg-shadow.png);
+background-repeat: no-repeat;
+background-position: center top;
+background-size: contain;
+background-attachment: scroll;
+background-color: #f4f4f1;
+}
+
+.rigel_strange_portfolio_item .rigel_mask {background-color:#ffffff !important;}
+.rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:#050505 !important;}
+
+
+

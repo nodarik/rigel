@@ -1,0 +1,1442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rigel\n"
+"POT-Creation-Date: 2016-03-02 18:16+0400\n"
+"PO-Revision-Date: 2016-03-02 18:17+0400\n"
+"Last-Translator: radiuzz <studio@radiuzz.com>\n"
+"Language-Team: radiuzz <info@radiuzz.com>\n"
+"Language: english\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr_e\n"
+"X-Poedit-Basepath: C:\\Users\\nodari\\Documents\\My Web Sites\\Rigel test "
+"demo\\wp-content\\themes\\rigel\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22
+msgid "Oops, 404 Error!"
+msgstr ""
+
+#: 404.php:22
+msgid "The page you were looking for could not be found."
+msgstr ""
+
+#: archive.php:7 blog.php:7 index.php:7
+#: framework/post-format/format-gallery.php:4
+#: framework/post-format/format-image.php:4
+#: framework/post-format/format-video.php:4 framework/post-format/format.php:4
+msgid "Blog Left Sidebar"
+msgstr ""
+
+#: archive.php:7 archive.php:15 archive.php:37 archive.php:39 blog.php:7
+#: blog.php:15 blog.php:39 functions.php:392 index.php:7 index.php:15
+#: index.php:37 index.php:39 search.php:6 single.php:10 single.php:73
+#: single.php:75 woocommerce.php:15 framework/post-format/format-gallery.php:4
+#: framework/post-format/format-gallery.php:59
+#: framework/post-format/format-image.php:4
+#: framework/post-format/format-image.php:51
+#: framework/post-format/format-video.php:4
+#: framework/post-format/format-video.php:46
+#: framework/post-format/format.php:4 framework/post-format/format.php:50
+msgid "Left Sidebar"
+msgstr ""
+
+#: archive.php:8 blog.php:8 index.php:8
+#: framework/post-format/format-gallery.php:5
+#: framework/post-format/format-image.php:5
+#: framework/post-format/format-video.php:5 framework/post-format/format.php:5
+msgid "Blog Right Sidebar"
+msgstr ""
+
+#: archive.php:8 archive.php:10 archive.php:37 blog.php:8 blog.php:37
+#: functions.php:391 index.php:8 index.php:37 single-portfolio.php:11
+#: single.php:6 single.php:73 framework/post-format/format-gallery.php:5
+#: framework/post-format/format-gallery.php:10
+#: framework/post-format/format-image.php:5
+#: framework/post-format/format-image.php:10
+#: framework/post-format/format-video.php:5
+#: framework/post-format/format-video.php:10
+#: framework/post-format/format.php:5 framework/post-format/format.php:10
+msgid "Right Sidebar"
+msgstr ""
+
+#: archive.php:9 archive.php:15 blog.php:9 blog.php:15 index.php:9
+#: index.php:15 search.php:6 single.php:10
+#: framework/post-format/format-gallery.php:6
+#: framework/post-format/format-image.php:6
+#: framework/post-format/format-video.php:6 framework/post-format/format.php:6
+msgid "Without Sidebar"
+msgstr ""
+
+#: archive.php:41 blog.php:41 functions.php:170 index.php:41 single.php:77
+msgid "Blog Sidebar"
+msgstr ""
+
+#: blank.php:19 blog.php:19 index.php:19 single.php:11
+msgid "There are no posts"
+msgstr ""
+
+#: functions.php:115
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:116
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php:179
+msgid "WooCommerce Page Sidebar"
+msgstr ""
+
+#: functions.php:188
+msgid "Portfolio Sidebar"
+msgstr ""
+
+#: functions.php:197
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:226
+msgid "Visual Composer"
+msgstr ""
+
+#: functions.php:236
+msgid "Slider Revolution"
+msgstr ""
+
+#: functions.php:247
+msgid "Ultimate_VC_Addons"
+msgstr ""
+
+#: functions.php:258
+msgid "cf-Post-Formats"
+msgstr ""
+
+#: functions.php:268
+msgid "Essential Grid"
+msgstr ""
+
+#: functions.php:278
+msgid "Redux Framework"
+msgstr ""
+
+#: functions.php:303 framework/plugin-activation.php:301
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:304 framework/plugin-activation.php:302
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:305 framework/plugin-activation.php:303
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:306 framework/plugin-activation.php:304
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:307
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: functions.php:308
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: functions.php:309
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+
+#: functions.php:310
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: functions.php:311
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr ""
+
+#: functions.php:312
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+
+#: functions.php:313
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: functions.php:314
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr ""
+
+#: functions.php:315
+msgid "Begin installing plugin"
+msgstr ""
+
+#: functions.php:316
+msgid "Activate installed plugin"
+msgstr ""
+
+#: functions.php:317 framework/plugin-activation.php:341
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:318 framework/plugin-activation.php:343
+#: framework/plugin-activation.php:2933
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:319
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:366 functions.php:367
+msgid "Additional Description"
+msgstr ""
+
+#: functions.php:368 functions.php:369
+msgid "Additional settings"
+msgstr ""
+
+#: functions.php:378
+msgid "You can use any sidebar, just choose it"
+msgstr ""
+
+#: functions.php:383
+msgid "sidebars"
+msgstr ""
+
+#: functions.php:383 functions.php:396 functions.php:408 functions.php:426
+#: functions.php:480 functions.php:497
+msgid "selected"
+msgstr ""
+
+#: functions.php:387
+msgid "SideBar Position"
+msgstr ""
+
+#: functions.php:399 functions.php:471
+msgid "Show tagline"
+msgstr ""
+
+#: functions.php:403 functions.php:475
+msgid "Show"
+msgstr ""
+
+#: functions.php:404 functions.php:476
+msgid "Hide"
+msgstr ""
+
+#: functions.php:415
+msgid "Small Description"
+msgstr ""
+
+#: functions.php:417
+msgid "Thumbnail"
+msgstr ""
+
+#: functions.php:430
+msgid "Hover BG color"
+msgstr ""
+
+#: functions.php:432
+msgid "Hover TEXT color"
+msgstr ""
+
+#: functions.php:435
+msgid "You can upload up to 5 additional images (Optional. For slider)"
+msgstr ""
+
+#: functions.php:438 functions.php:503
+msgid "Image 1:"
+msgstr ""
+
+#: functions.php:440 functions.php:447 functions.php:455 functions.php:461
+#: functions.php:467 functions.php:505 functions.php:512 functions.php:520
+#: functions.php:526 functions.php:532
+msgid "Upload"
+msgstr ""
+
+#: functions.php:445 functions.php:510
+msgid "Image 2:"
+msgstr ""
+
+#: functions.php:453 functions.php:518
+msgid "Image 3:"
+msgstr ""
+
+#: functions.php:459 functions.php:524
+msgid "Image 4:"
+msgstr ""
+
+#: functions.php:465 functions.php:530
+msgid "Image 5:"
+msgstr ""
+
+#: functions.php:500
+msgid "You can upload up to 5 additional images (Optional. For Gallery)"
+msgstr ""
+
+#: functions.php:615
+msgid "Back"
+msgstr ""
+
+#: functions.php:616
+msgid "Next"
+msgstr ""
+
+#: functions.php:627
+msgid "Home"
+msgstr ""
+
+#: functions.php:628
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: functions.php:629
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: functions.php:630
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: functions.php:631
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: functions.php:632
+msgid "Error 404"
+msgstr ""
+
+#: functions.php:762
+msgid "("
+msgstr ""
+
+#: functions.php:763
+msgid "Page"
+msgstr ""
+
+#: functions.php:764
+msgid ")"
+msgstr ""
+
+#: header.php:61
+msgid "Blog"
+msgstr ""
+
+#: header.php:73 framework/post-format/format-gallery.php:19
+#: framework/post-format/format-gallery.php:68
+#: framework/post-format/format-image.php:19
+#: framework/post-format/format-image.php:60
+#: framework/post-format/format-video.php:19
+#: framework/post-format/format-video.php:55
+#: framework/post-format/format.php:19 framework/post-format/format.php:59
+#: framework/post-format/single-gallery.php:13
+#: framework/post-format/single-image.php:12
+#: framework/post-format/single-video.php:12
+#: framework/post-format/single.php:12
+msgid "Comments"
+msgstr ""
+
+#: search.php:7
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:19
+msgid "Nothing was found!"
+msgstr ""
+
+#: search.php:19
+msgid "Change a few things up and try submitting again."
+msgstr ""
+
+#: single-portfolio.php:50 single.php:24
+msgid "0 Comments"
+msgstr ""
+
+#: single-portfolio.php:50 single.php:24
+msgid "1 Comment:"
+msgstr ""
+
+#: single-portfolio.php:50 single.php:24
+msgid "% Comments:"
+msgstr ""
+
+#: single-portfolio.php:70 single-portfolio.php:79 single.php:43 single.php:52
+msgid "Leave a Reply"
+msgstr ""
+
+#: single-portfolio.php:70 single-portfolio.php:79 single.php:43 single.php:52
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: single-portfolio.php:73 single-portfolio.php:86 single.php:46 single.php:57
+msgid "Replay"
+msgstr ""
+
+#: single.php:24
+msgid "approved"
+msgstr ""
+
+#: single.php:45 single.php:56
+msgid "Message"
+msgstr ""
+
+#: single.php:54 framework/vc_extend/vc.php:149
+msgid "Name"
+msgstr ""
+
+#: single.php:55
+msgid "E-mail"
+msgstr ""
+
+#: framework/ajax-portfolio.php:73
+msgid "Load More"
+msgstr ""
+
+#: framework/ajax-portfolio.php:74
+msgid "All Posts Loaded"
+msgstr ""
+
+#: framework/plugin-activation.php:342
+msgid "Return to the dashboard"
+msgstr ""
+
+#: framework/plugin-activation.php:344
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: framework/plugin-activation.php:345
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/plugin-activation.php:346
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/plugin-activation.php:347
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/plugin-activation.php:348
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/plugin-activation.php:349
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/plugin-activation.php:2096
+msgid "Required"
+msgstr ""
+
+#: framework/plugin-activation.php:2099
+msgid "Recommended"
+msgstr ""
+
+#: framework/plugin-activation.php:2115
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/plugin-activation.php:2118
+msgid "External Source"
+msgstr ""
+
+#: framework/plugin-activation.php:2121
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/plugin-activation.php:2138
+msgid "Not Installed"
+msgstr ""
+
+#: framework/plugin-activation.php:2142
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/plugin-activation.php:2144
+msgid "Active"
+msgstr ""
+
+#: framework/plugin-activation.php:2150
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/plugin-activation.php:2153
+msgid "Requires Update"
+msgstr ""
+
+#: framework/plugin-activation.php:2156
+msgid "Update recommended"
+msgstr ""
+
+#: framework/plugin-activation.php:2308
+msgid "Installed version:"
+msgstr ""
+
+#: framework/plugin-activation.php:2316
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/plugin-activation.php:2328
+msgid "Available version:"
+msgstr ""
+
+#: framework/plugin-activation.php:2351
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: framework/plugin-activation.php:2365
+msgid "Plugin"
+msgstr ""
+
+#: framework/plugin-activation.php:2366
+msgid "Source"
+msgstr ""
+
+#: framework/plugin-activation.php:2367
+msgid "Type"
+msgstr ""
+
+#: framework/plugin-activation.php:2371
+msgid "Version"
+msgstr ""
+
+#: framework/plugin-activation.php:2372
+msgid "Status"
+msgstr ""
+
+#: framework/plugin-activation.php:2532
+msgid "Install"
+msgstr ""
+
+#: framework/plugin-activation.php:2538
+msgid "Update"
+msgstr ""
+
+#: framework/plugin-activation.php:2541
+msgid "Activate"
+msgstr ""
+
+#: framework/plugin-activation.php:2572
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/plugin-activation.php:2574
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/plugin-activation.php:2610
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/plugin-activation.php:2612
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/plugin-activation.php:2932
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/plugin-activation.php:3262
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/plugin-activation.php:3264
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/plugin-activation.php:3265
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/plugin-activation.php:3269
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/plugin-activation.php:3270
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/plugin-activation.php:3271
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/plugin-activation.php:3272
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/plugin-activation.php:3275
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/plugin-activation.php:3277
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/plugin-activation.php:3278
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/shortcodes.php:18
+msgid "Customer"
+msgstr ""
+
+#: framework/theme-configs.php:59 framework/theme-configs.php:64
+msgid "Rigel Options"
+msgstr ""
+
+#: framework/theme-configs.php:86
+msgid "<p>Welcome to the awesome <strong>rigel Theme</strong></p>"
+msgstr ""
+
+#: framework/theme-configs.php:90
+msgid ""
+"<p>This text is displayed above the options panel. It isn't required, but "
+"more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: framework/theme-configs.php:211
+msgid "General Settings"
+msgstr ""
+
+#: framework/theme-configs.php:224
+msgid "Favicon Upload"
+msgstr ""
+
+#: framework/theme-configs.php:225
+msgid "Upload your favicon the url"
+msgstr ""
+
+#: framework/theme-configs.php:226 framework/theme-configs.php:235
+#: framework/theme-configs.php:244 framework/theme-configs.php:601
+msgid ""
+"Upload image using the native media uploader, or define the URL directly"
+msgstr ""
+
+#: framework/theme-configs.php:233
+msgid "Logo Upload"
+msgstr ""
+
+#: framework/theme-configs.php:234
+msgid "Upload your logo or paste the url"
+msgstr ""
+
+#: framework/theme-configs.php:242
+msgid "Logo Preloader"
+msgstr ""
+
+#: framework/theme-configs.php:243
+msgid "Upload your Preloader logo or paste the url"
+msgstr ""
+
+#: framework/theme-configs.php:250
+msgid "Switch on page preload?"
+msgstr ""
+
+#: framework/theme-configs.php:259
+msgid "Main accent color"
+msgstr ""
+
+#: framework/theme-configs.php:260
+msgid "Pick a color for the theme (default: #b09991)."
+msgstr ""
+
+#: framework/theme-configs.php:267
+msgid "Switch on tagline?"
+msgstr ""
+
+#: framework/theme-configs.php:275
+msgid "Do you want to add styling \"//\" to page titles?"
+msgstr ""
+
+#: framework/theme-configs.php:287
+msgid "Custom CSS"
+msgstr ""
+
+#: framework/theme-configs.php:288
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: framework/theme-configs.php:289
+msgid "This field is even CSS validated!"
+msgstr ""
+
+#: framework/theme-configs.php:296
+msgid "Typography"
+msgstr ""
+
+#: framework/theme-configs.php:308
+msgid "Menu Typography"
+msgstr ""
+
+#: framework/theme-configs.php:313
+msgid "Typography option for menu."
+msgstr ""
+
+#: framework/theme-configs.php:326
+msgid "Titles Font"
+msgstr ""
+
+#: framework/theme-configs.php:340
+msgid "Specify the title font properties."
+msgstr ""
+
+#: framework/theme-configs.php:352
+msgid "Body Font"
+msgstr ""
+
+#: framework/theme-configs.php:360
+msgid "Typography option for body."
+msgstr ""
+
+#: framework/theme-configs.php:374
+msgid "Footer social Font"
+msgstr ""
+
+#: framework/theme-configs.php:382
+msgid "Typography option for footer social."
+msgstr ""
+
+#: framework/theme-configs.php:395
+msgid "Header Settings"
+msgstr ""
+
+#: framework/theme-configs.php:407
+msgid "Header Layout"
+msgstr ""
+
+#: framework/theme-configs.php:408
+msgid "Select the header Layout"
+msgstr ""
+
+#: framework/theme-configs.php:409
+msgid "Header layouts"
+msgstr ""
+
+#: framework/theme-configs.php:430
+msgid "Always Display Menu"
+msgstr ""
+
+#: framework/theme-configs.php:431
+msgid "If enabled menu word will be displayed"
+msgstr ""
+
+#: framework/theme-configs.php:447
+msgid "Menu Word"
+msgstr ""
+
+#: framework/theme-configs.php:449
+msgid "Menu word near the menu swithcher"
+msgstr ""
+
+#: framework/theme-configs.php:462
+msgid "Logo Tagline"
+msgstr ""
+
+#: framework/theme-configs.php:464
+msgid ""
+"Text will appear right to the logo, delete it if you dont want to use it"
+msgstr ""
+
+#: framework/theme-configs.php:470
+msgid "Social networks"
+msgstr ""
+
+#: framework/theme-configs.php:482
+msgid "Facebook url"
+msgstr ""
+
+#: framework/theme-configs.php:488
+msgid "Twitter url"
+msgstr ""
+
+#: framework/theme-configs.php:494
+msgid "Google + url"
+msgstr ""
+
+#: framework/theme-configs.php:500
+msgid "Pinterest URL"
+msgstr ""
+
+#: framework/theme-configs.php:506
+msgid "LinkedIN url"
+msgstr ""
+
+#: framework/theme-configs.php:512
+msgid "Instagram url"
+msgstr ""
+
+#: framework/theme-configs.php:518
+msgid "Blog and Portfolio"
+msgstr ""
+
+#: framework/theme-configs.php:531
+msgid "Portfolio thumbnail hover background color"
+msgstr ""
+
+#: framework/theme-configs.php:532
+msgid "If you set this color, BG color from single portfolio will be overiden"
+msgstr ""
+
+#: framework/theme-configs.php:540
+msgid "Portfolio thumbnail hover text color"
+msgstr ""
+
+#: framework/theme-configs.php:541
+msgid ""
+"If you set this color, hover text color from single portfolio will be "
+"overiden"
+msgstr ""
+
+#: framework/theme-configs.php:549
+msgid "Blog Sidebar Position"
+msgstr ""
+
+#: framework/theme-configs.php:557
+msgid "Portfolio Style"
+msgstr ""
+
+#: framework/theme-configs.php:564
+msgid "Fisrt page load"
+msgstr ""
+
+#: framework/theme-configs.php:565
+msgid "How many projects per page?"
+msgstr ""
+
+#: framework/theme-configs.php:575
+msgid "Projects load"
+msgstr ""
+
+#: framework/theme-configs.php:576
+msgid "How many projects load on click?"
+msgstr ""
+
+#: framework/theme-configs.php:586
+msgid "Footer Settings"
+msgstr ""
+
+#: framework/theme-configs.php:599
+msgid "Footer Logo Upload"
+msgstr ""
+
+#: framework/theme-configs.php:600
+msgid "Upload your footer logo or paste the url"
+msgstr ""
+
+#: framework/theme-configs.php:607
+msgid "Hide Footer"
+msgstr ""
+
+#: framework/theme-configs.php:608
+msgid ""
+"If enabled Footer will be hidden and you have to click on footer name (see "
+"bellow) to make it appear"
+msgstr ""
+
+#: framework/theme-configs.php:616
+msgid "Footer Name"
+msgstr ""
+
+#: framework/theme-configs.php:625
+msgid "Footer second section"
+msgstr ""
+
+#: framework/theme-configs.php:626
+msgid "You are allowed to use html tags here"
+msgstr ""
+
+#: framework/theme-configs.php:649
+msgid "Bottom footer text"
+msgstr ""
+
+#: framework/theme-configs.php:650
+msgid ""
+"2016 © Rigel Template By<a href=\"http://radiuzz.com\"> Radiuzz.com </a>"
+msgstr ""
+
+#: framework/theme-configs.php:659
+msgid "Footer Background"
+msgstr ""
+
+#: framework/theme-configs.php:660
+msgid "Header background with image, color, etc."
+msgstr ""
+
+#: framework/theme-configs.php:661
+msgid ""
+"Optional: Upload a Background Image for the footer part. Width 1200px height "
+"as defined in the setting."
+msgstr ""
+
+#: framework/theme-configs.php:670
+msgid "Bottom Footer Background Color"
+msgstr ""
+
+#: framework/theme-configs.php:671
+msgid "Pick a color for the theme "
+msgstr ""
+
+#: framework/theme-configs.php:679
+msgid "Bottom Footer Border Color"
+msgstr ""
+
+#: framework/theme-configs.php:680
+msgid "Pick a color for the theme"
+msgstr ""
+
+#: framework/theme-configs.php:688
+msgid "Footer Text Color"
+msgstr ""
+
+#: framework/theme-configs.php:689
+msgid "Choose text color in footer."
+msgstr ""
+
+#: framework/headers/header-v1.php:36 framework/headers/header-v2.php:37
+#: framework/headers/header-v3.php:36
+msgid ""
+"<div class=\"alert alert-success\" style=\"margin-top:10px !important; "
+"margin-bottom:10px; margin-left:20px;margin-right:20px;\"><strong>Set up "
+"your FIRST menu</strong><br> Appearance -> Menus -> Create your menu -> "
+"Choose it in \"Theme Location\" block</div>"
+msgstr ""
+
+#: framework/headers/header-v1.php:41 framework/headers/header-v3.php:41
+msgid " "
+msgstr ""
+
+#: framework/headers/header-v1.php:41 framework/headers/header-v3.php:41
+msgid "Search for:"
+msgstr ""
+
+#: framework/portfolio/rigel_first_portoflio.php:39
+#: framework/post-format/format-gallery.php:53
+#: framework/post-format/format-image.php:45
+#: framework/post-format/format-video.php:40
+#: framework/post-format/format.php:44
+#: framework/post-format/single-gallery.php:35
+#: framework/post-format/single-image.php:27
+#: framework/post-format/single-video.php:24
+#: framework/post-format/single.php:27
+msgid " Read More"
+msgstr ""
+
+#: framework/post-format/format-gallery.php:18
+#: framework/post-format/format-gallery.php:67
+#: framework/post-format/format-image.php:18
+#: framework/post-format/format-image.php:59
+#: framework/post-format/format-video.php:18
+#: framework/post-format/format-video.php:54
+#: framework/post-format/format.php:18 framework/post-format/format.php:58
+msgid "No tags"
+msgstr ""
+
+#: framework/post-format/format-testimonials.php:12
+#: framework/post-format/single-gallery.php:12
+#: framework/post-format/single-image.php:11
+#: framework/post-format/single-video.php:11
+#: framework/post-format/single.php:11
+msgid "By"
+msgstr ""
+
+#: framework/vc_extend/vc.php:6
+msgid "Price Table"
+msgstr ""
+
+#: framework/vc_extend/vc.php:13 framework/vc_extend/vc.php:85
+#: framework/vc_extend/vc.php:99 framework/vc_extend/vc.php:118
+#: framework/vc_extend/vc.php:137 framework/vc_extend/vc.php:207
+#: framework/vc_extend/vc.php:222 framework/vc_extend/vc.php:307
+#: framework/vc_extend/vc.php:322 framework/vc_extend/vc.php:380
+#: framework/vc_extend/vc.php:395 framework/vc_extend/vc.php:453
+#: framework/vc_extend/vc.php:468 framework/vc_extend/vc.php:490
+#: framework/vc_extend/vc.php:505 framework/vc_extend/vc.php:562
+#: framework/vc_extend/vc.php:577 framework/vc_extend/vc.php:600
+#: framework/vc_extend/vc.php:615 framework/vc_extend/vc.php:703
+#: framework/vc_extend/vc.php:718 framework/vc_extend/vc.php:788
+#: framework/vc_extend/vc.php:804
+msgid "Content"
+msgstr ""
+
+#: framework/vc_extend/vc.php:18
+msgid "It will be special table?"
+msgstr ""
+
+#: framework/vc_extend/vc.php:20
+msgid "0"
+msgstr ""
+
+#: framework/vc_extend/vc.php:21
+msgid "1 or 0"
+msgstr ""
+
+#: framework/vc_extend/vc.php:26
+msgid "Price Title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:28
+msgid "Business Plan"
+msgstr ""
+
+#: framework/vc_extend/vc.php:33
+msgid "Amount"
+msgstr ""
+
+#: framework/vc_extend/vc.php:35
+msgid "10"
+msgstr ""
+
+#: framework/vc_extend/vc.php:40
+msgid "Currency"
+msgstr ""
+
+#: framework/vc_extend/vc.php:42
+msgid "$"
+msgstr ""
+
+#: framework/vc_extend/vc.php:47 framework/vc_extend/vc.php:234
+msgid "Date"
+msgstr ""
+
+#: framework/vc_extend/vc.php:49
+msgid "per month"
+msgstr ""
+
+#: framework/vc_extend/vc.php:55
+msgid "Header background color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:63
+msgid "Header text color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:70
+msgid "Text on the button"
+msgstr ""
+
+#: framework/vc_extend/vc.php:72
+msgid "Order Now"
+msgstr ""
+
+#: framework/vc_extend/vc.php:77
+msgid "Button URL"
+msgstr ""
+
+#: framework/vc_extend/vc.php:79 framework/vc_extend/vc.php:258
+#: framework/vc_extend/vc.php:265 framework/vc_extend/vc.php:346
+#: framework/vc_extend/vc.php:419 framework/vc_extend/vc.php:483
+#: framework/vc_extend/vc.php:520
+msgid "#"
+msgstr ""
+
+#: framework/vc_extend/vc.php:87
+msgid "<ul><li>1</li><li>2</li><li>3</li></ul>"
+msgstr ""
+
+#: framework/vc_extend/vc.php:92
+msgid "Light Box Image"
+msgstr ""
+
+#: framework/vc_extend/vc.php:104 framework/vc_extend/vc.php:142
+msgid "Member Photo"
+msgstr ""
+
+#: framework/vc_extend/vc.php:111
+msgid "Gallery-Slider"
+msgstr ""
+
+#: framework/vc_extend/vc.php:122
+msgid "Images"
+msgstr ""
+
+#: framework/vc_extend/vc.php:125
+msgid "Select images from media library."
+msgstr ""
+
+#: framework/vc_extend/vc.php:130
+msgid "Team Member"
+msgstr ""
+
+#: framework/vc_extend/vc.php:151
+msgid "Jhon Doe"
+msgstr ""
+
+#: framework/vc_extend/vc.php:156
+msgid "Position In Company"
+msgstr ""
+
+#: framework/vc_extend/vc.php:158
+msgid "My Position In Company"
+msgstr ""
+
+#: framework/vc_extend/vc.php:164
+msgid "Contact text"
+msgstr ""
+
+#: framework/vc_extend/vc.php:166
+msgid "Text above the icons"
+msgstr ""
+
+#: framework/vc_extend/vc.php:171
+msgid "URL to Facebook page"
+msgstr ""
+
+#: framework/vc_extend/vc.php:178
+msgid "URL to Twitter page"
+msgstr ""
+
+#: framework/vc_extend/vc.php:185
+msgid "URL to Google plus page"
+msgstr ""
+
+#: framework/vc_extend/vc.php:192
+msgid "URL to LinkedIn page"
+msgstr ""
+
+#: framework/vc_extend/vc.php:199
+msgid "e-mail"
+msgstr ""
+
+#: framework/vc_extend/vc.php:209 framework/vc_extend/vc.php:309
+#: framework/vc_extend/vc.php:382 framework/vc_extend/vc.php:455
+#: framework/vc_extend/vc.php:492 framework/vc_extend/vc.php:564
+#: framework/vc_extend/vc.php:602 framework/vc_extend/vc.php:705
+#: framework/vc_extend/vc.php:790
+msgid "<p>I am test text block. Click edit button to change this text.</p>"
+msgstr ""
+
+#: framework/vc_extend/vc.php:210 framework/vc_extend/vc.php:310
+#: framework/vc_extend/vc.php:383 framework/vc_extend/vc.php:456
+#: framework/vc_extend/vc.php:493 framework/vc_extend/vc.php:565
+#: framework/vc_extend/vc.php:603 framework/vc_extend/vc.php:706
+#: framework/vc_extend/vc.php:791
+msgid "Enter your content."
+msgstr ""
+
+#: framework/vc_extend/vc.php:215
+msgid "Testimonial I"
+msgstr ""
+
+#: framework/vc_extend/vc.php:227 framework/vc_extend/vc.php:327
+#: framework/vc_extend/vc.php:400 framework/vc_extend/vc.php:473
+#: framework/vc_extend/vc.php:510
+msgid "Want to stick with header?"
+msgstr ""
+
+#: framework/vc_extend/vc.php:229
+msgid "Testimonial Author"
+msgstr ""
+
+#: framework/vc_extend/vc.php:236
+msgid "Testimonial date"
+msgstr ""
+
+#: framework/vc_extend/vc.php:241
+msgid "Rating"
+msgstr ""
+
+#: framework/vc_extend/vc.php:243
+msgid "5"
+msgstr ""
+
+#: framework/vc_extend/vc.php:244
+msgid "From 1 to 5"
+msgstr ""
+
+#: framework/vc_extend/vc.php:249
+msgid "Company"
+msgstr ""
+
+#: framework/vc_extend/vc.php:251
+msgid "Testimonial Company"
+msgstr ""
+
+#: framework/vc_extend/vc.php:256
+msgid "URL to Company Site"
+msgstr ""
+
+#: framework/vc_extend/vc.php:263
+msgid "Author Image"
+msgstr ""
+
+#: framework/vc_extend/vc.php:266
+msgid "Past url to your image"
+msgstr ""
+
+#: framework/vc_extend/vc.php:271
+msgid "Image Style"
+msgstr ""
+
+#: framework/vc_extend/vc.php:273 framework/vc_extend/vc.php:654
+#: framework/vc_extend/vc.php:725
+msgid "1"
+msgstr ""
+
+#: framework/vc_extend/vc.php:274
+msgid "1 -  Image Circle, 2 -  Image Rounded conors, 3 -  Image Polaroid Style"
+msgstr ""
+
+#: framework/vc_extend/vc.php:280 framework/vc_extend/vc.php:353
+#: framework/vc_extend/vc.php:426
+msgid "Background color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:283
+msgid "Choose background color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:289 framework/vc_extend/vc.php:362
+#: framework/vc_extend/vc.php:435 framework/vc_extend/vc.php:677
+msgid "Border color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:292
+msgid "Choose border color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:298 framework/vc_extend/vc.php:371
+#: framework/vc_extend/vc.php:444 framework/vc_extend/vc.php:591
+#: framework/vc_extend/vc.php:686
+msgid "Text color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:301 framework/vc_extend/vc.php:356
+#: framework/vc_extend/vc.php:374 framework/vc_extend/vc.php:429
+#: framework/vc_extend/vc.php:447 framework/vc_extend/vc.php:594
+#: framework/vc_extend/vc.php:671 framework/vc_extend/vc.php:689
+#: framework/vc_extend/vc.php:774
+msgid "Choose text color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:315
+msgid "rigel icon I"
+msgstr ""
+
+#: framework/vc_extend/vc.php:329 framework/vc_extend/vc.php:402
+#: framework/vc_extend/vc.php:475 framework/vc_extend/vc.php:512
+msgid "Box Title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:330 framework/vc_extend/vc.php:403
+#: framework/vc_extend/vc.php:476 framework/vc_extend/vc.php:513
+msgid "Enter the box title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:336 framework/vc_extend/vc.php:409
+msgid "Icon Background color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:339 framework/vc_extend/vc.php:412
+msgid "Choose Icon Background color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:344 framework/vc_extend/vc.php:417
+#: framework/vc_extend/vc.php:481 framework/vc_extend/vc.php:526
+msgid "Icon"
+msgstr ""
+
+#: framework/vc_extend/vc.php:347 framework/vc_extend/vc.php:420
+#: framework/vc_extend/vc.php:484
+msgid "Past url to your icon"
+msgstr ""
+
+#: framework/vc_extend/vc.php:365 framework/vc_extend/vc.php:438
+#: framework/vc_extend/vc.php:680
+msgid "Choose Border color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:388
+msgid "rigel icon II"
+msgstr ""
+
+#: framework/vc_extend/vc.php:461
+msgid "rigel icon III"
+msgstr ""
+
+#: framework/vc_extend/vc.php:498
+msgid "rigel icon IV"
+msgstr ""
+
+#: framework/vc_extend/vc.php:518
+msgid "Title Link"
+msgstr ""
+
+#: framework/vc_extend/vc.php:521
+msgid "Paste a link for title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:528
+msgid "fa-ban"
+msgstr ""
+
+#: framework/vc_extend/vc.php:529
+msgid "FontAwesom icon"
+msgstr ""
+
+#: framework/vc_extend/vc.php:535
+msgid "Icon Color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:538
+msgid "Choose icon color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:544
+msgid "Title Color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:547
+msgid "Choose title color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:553
+msgid "Icon Background Color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:556
+msgid "Choose icon background  color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:570
+msgid "Achievements"
+msgstr ""
+
+#: framework/vc_extend/vc.php:582
+msgid "Achievement Title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:584
+msgid "123"
+msgstr ""
+
+#: framework/vc_extend/vc.php:585
+msgid "Enter the achievement title"
+msgstr ""
+
+#: framework/vc_extend/vc.php:608
+msgid "Content Break"
+msgstr ""
+
+#: framework/vc_extend/vc.php:620 framework/vc_extend/vc.php:731
+msgid "Top Margin"
+msgstr ""
+
+#: framework/vc_extend/vc.php:622 framework/vc_extend/vc.php:630
+#: framework/vc_extend/vc.php:638 framework/vc_extend/vc.php:646
+#: framework/vc_extend/vc.php:733 framework/vc_extend/vc.php:741
+#: framework/vc_extend/vc.php:749 framework/vc_extend/vc.php:757
+msgid "40px"
+msgstr ""
+
+#: framework/vc_extend/vc.php:628 framework/vc_extend/vc.php:739
+msgid "Bottom Margin"
+msgstr ""
+
+#: framework/vc_extend/vc.php:636 framework/vc_extend/vc.php:747
+msgid "Top Padding"
+msgstr ""
+
+#: framework/vc_extend/vc.php:644 framework/vc_extend/vc.php:755
+msgid "Bottom Padding"
+msgstr ""
+
+#: framework/vc_extend/vc.php:652 framework/vc_extend/vc.php:723
+msgid "Fix content on the center?"
+msgstr ""
+
+#: framework/vc_extend/vc.php:655 framework/vc_extend/vc.php:726
+msgid "Set '0' if you want to stretch content and '1' if you don't want."
+msgstr ""
+
+#: framework/vc_extend/vc.php:660
+msgid "Background Image"
+msgstr ""
+
+#: framework/vc_extend/vc.php:668
+msgid "BackGround color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:694 framework/vc_extend/vc.php:779
+msgid "Want to add extra class name?"
+msgstr ""
+
+#: framework/vc_extend/vc.php:697 framework/vc_extend/vc.php:782
+msgid "Extra class name"
+msgstr ""
+
+#: framework/vc_extend/vc.php:711
+msgid "Full Paralax"
+msgstr ""
+
+#: framework/vc_extend/vc.php:763
+msgid "Upload LeftSide Background image"
+msgstr ""
+
+#: framework/vc_extend/vc.php:771
+msgid "RightSide BackGround color"
+msgstr ""
+
+#: framework/vc_extend/vc.php:797
+msgid "Rotated text"
+msgstr ""
+
+#: framework/vc_extend/vc.php:809
+msgid "Rotation text"
+msgstr ""
+
+#: framework/vc_extend/vc.php:811
+msgid "Text"
+msgstr ""
+
+#: framework/vc_extend/vc.php:812
+msgid "Enter text to rotate"
+msgstr ""
