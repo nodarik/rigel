@@ -72,6 +72,17 @@ if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') == true) { //Internet Explorer St
 	}  
 	add_action( 'wp_enqueue_scripts', 'rigel_theme_styles_basic', 1 ); 	
 }
+/* ------------------------------------------------------------------------ */
+/* CUSTOM ADMIN STYLES*/
+/* ------------------------------------------------------------------------ */
+add_action('admin_enqueue_scripts', 'rigel_admin_theme_style');
+if ( !function_exists('rigel_admin_theme_style') ) {
+function rigel_admin_theme_style() {
+wp_enqueue_style('rigel_admin-theme', get_template_directory_uri() . '/framework/css/redux.css', false, '1.0.0' );
+}
+}
+
+
 
 /* ------------------------------------------------------------------------ */
 /* Loading Theme Scripts */
@@ -223,8 +234,8 @@ require_once('framework/plugin-activation.php');
 				'slug'     				=> 'js_composer', // The plugin slug (typically the folder name)
 				'source'   				=> 'http://rigel.radiuzz.com/plugins/js_composer.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '4.7.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-				'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+				'version' 				=> '4.11.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 			),
@@ -266,7 +277,7 @@ require_once('framework/plugin-activation.php');
 				'source'   				=> 'http://rigel.radiuzz.com/plugins/essential-grid.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
 				'version' 				=> '2.0.9.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-				'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 			),
@@ -300,18 +311,7 @@ require_once('framework/plugin-activation.php');
 		tgmpa($plugins, $config);
 		
 	}
-/* ------------------------------------------------------------------------ */
-/* Shortcodes.  */
-/* ------------------------------------------------------------------------ */
-include ('framework/shortcodes.php');
 
-/*=======================================
-	Include VC extends
-=======================================*/
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-if (is_plugin_active('js_composer/js_composer.php')){
-include('framework/vc_extend/vc.php');
-}
 /* ------------------------------------------------------------------------ */
 /* add theme support  */
 /* ------------------------------------------------------------------------ */

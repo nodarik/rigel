@@ -210,7 +210,7 @@ $theme_path_images = get_template_directory_uri() . '/framework/images/';
 
 
 $sections[] = array(
-	'title' => __('Getting Started', "rigel") ,
+	'title' => esc_html__('Getting Started', "rigel") ,
 	'header' => '',
 	'desc' => '',
 	'icon_class' => 'icon-large',
@@ -473,7 +473,7 @@ $sections[] = array(
 			'id' => 'header_field_text_2',
 			'type' => 'text',
 			'title' => esc_html__('Logo Tagline', 'rigel') ,
-			'default' => 'Logo',
+			'default' => '',
 			'subtitle' => esc_html__('Text will appear right to the logo, delete it if you dont want to use it', 'rigel') ,
 		) ,
 	

@@ -103,8 +103,10 @@ user-select: none;
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th, td {
 font-style: normal;
 }
-
-
+body.admin-bar {margin-top: 28px;} 
+body.admin-bar .rigel_header_holder.header_v2.fixed_menu.bot {
+    margin-top: 28px;
+}
 .wide_cont {
 background: #fff;
 max-width: 1170px;
