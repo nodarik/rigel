@@ -15,12 +15,12 @@ load_theme_textdomain( 'rigel', get_template_directory() . '/languages' );
 if ( class_exists( 'ReduxFramework' )) {
 require_once(get_template_directory() . '/framework/theme-configs.php');
 }
-add_action( 'after_setup_theme', 'theme_functions' );
-function theme_functions() {
+add_action( 'after_setup_theme', 'rigel_theme_functions' );
+function rigel_theme_functions() {
 add_theme_support( 'title-tag' );
 }
-add_filter( 'wp_title', 'custom_titles', 10, 2 );
-function custom_titles( $title, $sep ) {
+add_filter( 'wp_title', 'rigel_custom_titles', 10, 2 );
+function rigel_custom_titles( $title, $sep ) {
 //Check if custom titles are enabled from your option framework
 if ( get_option( 'enable_custom_titles' ) === 'on' ) {
 //Some silly example
@@ -209,7 +209,7 @@ function rigel_register_sidebars() {
 		));
 	}
 }
-add_filter('widget_text', 'do_shortcode');
+add_filter('widget_text', 'rigel_do_shortcode');
 
 if ( function_exists( 'add_theme_support' ) ) { 
 add_theme_support( 'post-thumbnails' );
@@ -329,14 +329,15 @@ function rigel_change_avatar_css($class) {
 $class = str_replace("class='avatar", "class='avatar img-circle rigel_avatar ", $class) ;
 return $class;
 }
+
 /* ------------------------------------------------------------------------ */
 /* Extra Fields.  */
 /* ------------------------------------------------------------------------ */
 add_action('admin_init', 'rigel_extra_fields', 1);
 function rigel_extra_fields() {
-	add_meta_box( 'extra_fields', esc_html__('Additional Description', 'rigel'), 'extra_fields_for_blog', 'post', 'normal', 'high'  );
+	add_meta_box( 'extra_fields', esc_html__('Additional Description', 'rigel'), 'rigel_extra_fields_for_blog', 'post', 'normal', 'high'  );
 	add_meta_box( 'extra_fields', esc_html__('Additional Description','rigel'), 'extra_fields_for_testimonials', 'testimonials', 'normal', 'high'  );
-	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'extra_fields_for_portfolio', 'portfolio', 'normal', 'high'  );
+	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'rigel_extra_fields_for_portfolio', 'portfolio', 'normal', 'high'  );
 	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'extra_fields_for_pages', 'page', 'normal', 'high'  );
 }
 @the_post_thumbnail();
@@ -344,7 +345,7 @@ function rigel_extra_fields() {
 @comments_template( $file, $separate_comments );
 
 //Extra Field for Pages
-function extra_fields_for_pages( $post ){
+function rigel_extra_fields_for_pages( $post ){
 ?>
     <h4><?php esc_html_e('You can use any sidebar, just choose it' , 'rigel'); ?></h4>
     <?php global $wp_registered_sidebars;
@@ -381,7 +382,7 @@ function extra_fields_for_pages( $post ){
    </select>
    <?php }
 //Extra Field for portfolio
-function extra_fields_for_portfolio( $post ){
+function rigel_extra_fields_for_portfolio( $post ){
 	?>
 	<h4><?php esc_html_e('Small Description', 'rigel'); ?></h4>
     <textarea rows="10" style="width:300px;" type="text" name="extra[port-descr]" value="<?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?>" ><?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?></textarea>
@@ -454,7 +455,7 @@ function extra_fields_for_portfolio( $post ){
 
 <?php };
 //Extra Field for Blog
-function extra_fields_for_blog( $post ){
+function rigel_extra_fields_for_blog( $post ){
 	?>
 	<h4>Show tagline</h4>
   <select name="extra[tagline_position]">
@@ -506,10 +507,10 @@ function extra_fields_for_blog( $post ){
     </div>
 <?php }
 //Save Extra Fields
-add_action('save_post', 'extra_fields_update', 0);
+add_action('save_post', 'rigel_extra_fields_update', 0);
 
 
-function extra_fields_update( $post_id ){
+function rigel_extra_fields_update( $post_id ){
 	if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return false; 
 	if ( !current_user_can('edit_post', $post_id) ) return false; 
 	if( !isset($_POST['extra']) ) return false;	
@@ -522,42 +523,42 @@ function extra_fields_update( $post_id ){
 	return $post_id;
 }
 
-function upload_scripts() {
+function rigel_upload_scripts() {
 	wp_enqueue_script('media-upload');
 	wp_enqueue_script('thickbox');
 	wp_register_script('my-upload', get_template_directory_uri().'/framework/js/custom_uploader.js', array('jquery','media-upload','thickbox'));
 	wp_enqueue_script('my-upload');
 }
+add_action('admin_enqueue_scripts', 'rigel_upload_scripts'); 
 
-function upload_styles() {
+function rigel_upload_styles() {
 	wp_enqueue_style('thickbox');
 }
-add_action('admin_enqueue_scripts', 'upload_scripts'); 
-add_action('admin_enqueue_scripts', 'upload_styles');
+add_action('admin_enqueue_scripts', 'rigel_upload_styles');
 
 /**
 * Custom widgets
 **/
-add_filter('wp_list_categories', 'add_span_cat_count');
-function add_span_cat_count($links) {
+add_filter('wp_list_categories', 'rigel_add_span_cat_count');
+function rigel_add_span_cat_count($links) {
 $links = str_replace('</a> (', '</a> <span class="rigel_cat_count">', $links);
 $links = str_replace(')', '</span>', $links);
 return $links;
 }
-add_filter('wp_list_archive', 'add_spann_cat_count');
-function add_spann_cat_count($links) {
+add_filter('wp_list_archive', 'rigel_add_spann_cat_count');
+function rigel_add_spann_cat_count($links) {
 $links = str_replace('</a> (', '</a> <span class="rigel_cat_count">', $links);
 $links = str_replace(')', '</span>', $links);
 return $links;
 }
 
-function tcr_tag_cloud_filter($args = array()) {
+function rigel_tcr_tag_cloud_filter($args = array()) {
     $args['smallest'] = 8;
     $args['largest'] = 14;
     $args['unit'] = 'pt';
     return $args;
 }
-add_filter('widget_tag_cloud_args', 'tcr_tag_cloud_filter', 90);
+add_filter('widget_tag_cloud_args', 'rigel_tcr_tag_cloud_filter', 90);
 
 //PAGINATION
 function wp_corenavi() {
@@ -749,5 +750,7 @@ function crumbs_tax($term_id, $tax, $sep){
 	return implode('', $termlinks);
 }
  
+ 
+
 
 ?>

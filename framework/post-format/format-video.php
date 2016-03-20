@@ -1,6 +1,6 @@
 <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); 
 $title = get_the_title();
-global $rigel_opt_data;
+$rigel_opt_data = get_option( 'rigel_opt_data' );
 if ( $title == esc_html__("Blog Left Sidebar", 'rigel'))  $rigel_opt_data['blog_sidebar_position'] = esc_html__("Left Sidebar", 'rigel');
 if ( $title == esc_html__("Blog Right Sidebar", 'rigel'))  $rigel_opt_data['blog_sidebar_position'] = esc_html__("Right Sidebar", 'rigel');
 if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_sidebar_position'] = esc_html__("Without Sidebar", 'rigel');

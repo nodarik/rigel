@@ -700,7 +700,7 @@ $ReduxFramework = new ReduxFramework($sections, $args, $tabs);
 
 // END Sample Config
 
-function generate_options_css($newdata)
+function rigel_generate_options_css($newdata)
 	{
 	$smof_data = $newdata;
 	$css_dir = get_stylesheet_directory() . '/framework/css/';
@@ -720,7 +720,7 @@ function generate_options_css($newdata)
 function rigel_theme_css_compiler()
 	{
 	global $rigel_opt_data;
-	generate_options_css($rigel_opt_data);
+	rigel_generate_options_css($rigel_opt_data);
 	}
 
 add_action('redux-compiler-rigel_opt_data', 'rigel_theme_css_compiler');

@@ -1,4 +1,4 @@
- <?php global $rigel_opt_data;?>
+<?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
 <div class="rigel_header_holder header_v1 <?php if ($rigel_opt_data['fixed_menu']) { ?> fixed_menu <?php }?>">
     <div class="first-row">
         <div class="container">

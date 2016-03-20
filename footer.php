@@ -1,4 +1,4 @@
-<?php global $rigel_opt_data;?>
+<?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
 </div>
 <div class="rigel_footer_custom_content  <?php if ($rigel_opt_data['hidden_footer']) { ?> hidden_footer <?php }?> ">
 <div class="copyright-text"><?php echo  do_shortcode($rigel_opt_data['bottom_line_text']) ?></div>
