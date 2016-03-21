@@ -258,7 +258,7 @@ require_once('framework/plugin-activation.php');
 			
 			array(
 				'name'     				=> esc_html__('Rigel core','rigel'), // The plugin name
-				'slug'     				=> 'cf-post-formats', // The plugin slug (typically the folder name)
+				'slug'     				=> 'rigel_core', // The plugin slug (typically the folder name)
 				'source'   				=> 'http://rigel.radiuzz.com/plugins/rigel_core.zip', // The plugin source
 				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
 				'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
