@@ -104,15 +104,6 @@ if ( !function_exists( 'rigel_load_scripts' ) ) {
 	}    
 }
 /* ------------------------------------------------------------------------ */
-/* Fix admin bar */
-/* ------------------------------------------------------------------------ */
-
-add_action('get_header', 'rigel_remove_admin_login_header');
-function rigel_remove_admin_login_header() {
-	remove_action('wp_head', '_admin_bar_bump_cb');
-}
-
-/* ------------------------------------------------------------------------ */
 /* Theme Menus */
 /* ------------------------------------------------------------------------ */
 function rigel_menu() { 
