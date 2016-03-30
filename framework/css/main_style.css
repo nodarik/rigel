@@ -57,19 +57,9 @@ version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 html {
-border: 0.75rem solid #F4F4F1;
 overflow-y: scroll;
 min-height: 100%;
 
-}
-@media screen and (min-width: 1400px){
-html {
-border-width: 2rem;
-}
-}
-@media screen and (min-width: 1024px){
-html {
-border-width: 1.5rem;
 }
 }
 body {

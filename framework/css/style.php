@@ -124,6 +124,14 @@ background-color: <?php echo esc_attr($rigel_opt_data['footer_bg']['background-c
 .rigel_strange_portfolio_item .rigel_mask {background-color:<?php echo esc_attr($rigel_opt_data['portfolio_thumbnail_bg_color']) ?> !important;}
 .rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:<?php echo esc_attr($rigel_opt_data['portfolio_thumbnail_text_color']) ?> !important;}
 
+html {
+border-top: <?php echo esc_attr($rigel_opt_data['main_border']['border-top']) ?>;
+border-right: <?php echo esc_attr($rigel_opt_data['main_border']['border-right']) ?>;
+border-bottom: <?php echo esc_attr($rigel_opt_data['main_border']['border-bottom']) ?>;
+border-left: <?php echo esc_attr($rigel_opt_data['main_border']['border-left']) ?>;
+border-style: <?php echo esc_attr($rigel_opt_data['main_border']['border-style']) ?>;
+border-color: <?php echo esc_attr($rigel_opt_data['main_border']['border-color']) ?>;
+}
 
 
 <?php echo esc_attr($rigel_opt_data['rigel_custom_css'])?>

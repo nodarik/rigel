@@ -264,19 +264,23 @@ $sections[] = array(
                         'off' => 'Disabled',
                 ) ,
 			array( 
-						'id'       => 'header-border',
+						'id'       => 'main_border',
 						'type'     => 'border',
-						'title'    => esc_html__('Header Border Option', 'rigel'),
-						'subtitle' => esc_html__('Only color validation can be done on this field type', 'rigel'),
-						'output'   => array('.site-header'),
-						'desc'     => esc_html__('This is the description field, again good for additional info.', 'rigel'),
+						'title'    => esc_html__('Body Border Option', 'rigel'),
+						'subtitle' => esc_html__('Here you can configure wrapper border width and color', 'rigel'),
+						'desc'     => esc_html__('change values here.', 'rigel'),
+						'all' => false,
+						'top' => true,
+						'left' => true,
+						'bottom' => true,
+						'left' => true,
 						'default'  => array(
-							'border-color'  => '#1e73be', 
+							'border-color'  => '#F4F4F1', 
 							'border-style'  => 'solid', 
-							'border-top'    => '3px', 
-							'border-right'  => '3px', 
-							'border-bottom' => '3px', 
-							'border-left'   => '3px'
+							'border-top'    => '16px', 
+							'border-right'  => '16px', 
+							'border-bottom' => '16px', 
+							'border-left'   => '16px'
 						)
 					),
                 array(
