@@ -6,28 +6,28 @@
 */
 
 .rigel_typo_headers {
-	font-family: 'Montserrat' !important;
+	font-family: 'montserrat' !important;
 }
 .rigel_typo_menu {
-	    font-family: Montserrat !important;
+	    font-family: montserrat !important;
 }
 
 h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_large, .sub_title, .rigel_footer_contact a {
-	font-family: 'Montserrat';
+	font-family: 'montserrat';
 	line-height: 33px ;
     color: #28262b;
-	letter-spacing: 0px;
+	letter-spacing: ;
 	}
 	
-.woocommerce .product p.price, .woocommerce .product span.price, .woocommerce .product form.cart .variations td.label
+.woocommerce .product p.price, .woocommerce .product span.price, .woocommerce .product form.cart .variations td.label, .footer-wraper .rigel_social_networks li span a
 	{
 		color: #28262b !important;
 	}
 
 	.rigel_menu_content_holder > ul > li > a, .header_menu > li > .my_drop > ul > li > a { 
-	font-weight: Montserrat !important;
-    font-family: Montserrat !important;
-    font-size: 12px !important;
+	font-weight: montserrat !important;
+    font-family: montserrat !important;
+    font-size: 13px !important;
     line-height: 22px !important;
 	color: #28262b !important;
 
@@ -35,27 +35,18 @@ h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_larg
 body, dl, dt, dd, ul, ol, li, pre, form, blockquote, th, td {
 	font-family: 'Source Sans Pro' ;
 	font-size: 14px ;
-    line-height: 22.4px ;
+    line-height: 33px ;
     color: #565656 ;
-	letter-spacing: 0px !important;
+	letter-spacing:  !important;
 	
 }
 
-.footer-wraper .rigel_social_networks li span a {
-	font-weight: 400;
- 
-    font-size: 17px;
-    line-height: 26px;
-	color: #28262b;
-	letter-spacing: -1px;
-}
-
 .minimal-light .esg-filterbutton, .esg-cc, .esg-sortbutton, .woocommerce .product form.cart .variations td.label, .woocommerce div.product form.cart .variations select { 
-font-family: Montserrat !important;
+font-family: montserrat !important;
 }
 
 .wpb_accordion_header a, .rigel_price_ul li, #menu-word, .logo-tagline, .rigel_logo_holdred a, .achievements h4, .achievements h3, .esg-slidedown {
-font-family: 'Montserrat' !important;}
+font-family: 'montserrat' !important;}
 
 .rigel_typo_body {
 	font-family: 'Source Sans Pro' ;
@@ -103,11 +94,11 @@ h3.rigel_blog_post_title a:hover { color:#b09991; }
 .rigel_ticket_commentlist .comment-author  .fn{ color:#b09991;}
 .rigel_ticket_commentlist .comment-body .reply .comment-reply-link { color:#b09991; }
 .rigel_ticket_commentlist > li > .comment-body .reply .comment-reply-link { color:#b09991;}
-.rigel_footer_holder {background:transparent}
-.rigel_footer_holder {   border-top: 1px solid transparent}
+.rigel_footer_holder {background:#f4f4f1}
+.rigel_footer_holder {   border-top: 1px solid #E0E0E0}
 .rigel_footer_custom_content, .rigel_footer_custom_content   p, .rigel_footer_custom_content   i, 
-.rigel_footer_custom_content .rigel_soc_icons a, .rigel_footer_custom_content .rigel_soc_icons a:before, .rigel_footer_contact h3, .footer-wraper .rigel_footer_contact h5, .footer-wraper .rigel_footer_contact span a  {   color: #28262b !important}
-.rigel_footer_custom_content .rigel_soc_icons a:before{   border: 1px solid #28262b !important}
+.rigel_footer_custom_content .rigel_soc_icons a, .rigel_footer_custom_content .rigel_soc_icons a:before, .rigel_footer_contact h3, .footer-wraper .rigel_footer_contact h5, .footer-wraper .rigel_footer_contact span a  {   color: #8E8E8E !important}
+.rigel_footer_custom_content .rigel_soc_icons a:before{   border: 1px solid #8E8E8E !important}
 .woocommerce-product-search input[type="submit"] { background:#b09991}
 .cart_list.product_list_widget .remove:hover { background:#b09991}
 .cart_list.product_list_widget .remove { color:#b09991 !important}
@@ -117,16 +108,16 @@ h3.rigel_blog_post_title a:hover { color:#b09991; }
 
 
 .rigel_footer_custom_content  {
-background-image: url(http://rigel.radiuzz.com/wp-content/uploads/2016/01/bg-shadow.png);
-background-repeat: no-repeat;
-background-position: center top;
-background-size: contain;
-background-attachment: scroll;
-background-color: #f4f4f1;
+background-image: url();
+background-repeat: ;
+background-position: ;
+background-size: ;
+background-attachment: ;
+background-color: #ffffff;
 }
 
-.rigel_strange_portfolio_item .rigel_mask {background-color:#ffffff !important;}
-.rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:#050505 !important;}
+.rigel_strange_portfolio_item .rigel_mask {background-color:#444444 !important;}
+.rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:#ffffff !important;}
 
 
 

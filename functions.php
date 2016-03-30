@@ -200,7 +200,6 @@ function rigel_register_sidebars() {
 		));
 	}
 }
-add_filter('widget_text', 'rigel_do_shortcode');
 
 if ( function_exists( 'add_theme_support' ) ) { 
 add_theme_support( 'post-thumbnails' );
@@ -327,9 +326,8 @@ return $class;
 add_action('admin_init', 'rigel_extra_fields', 1);
 function rigel_extra_fields() {
 	add_meta_box( 'extra_fields', esc_html__('Additional Description', 'rigel'), 'rigel_extra_fields_for_blog', 'post', 'normal', 'high'  );
-	add_meta_box( 'extra_fields', esc_html__('Additional Description','rigel'), 'extra_fields_for_testimonials', 'testimonials', 'normal', 'high'  );
 	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'rigel_extra_fields_for_portfolio', 'portfolio', 'normal', 'high'  );
-	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'extra_fields_for_pages', 'page', 'normal', 'high'  );
+	add_meta_box( 'extra_fields', esc_html__('Additional settings', 'rigel'), 'rigel_extra_fields_for_pages', 'page', 'normal', 'high'  );
 }
 @the_post_thumbnail();
 @wp_link_pages( $args );
@@ -372,6 +370,7 @@ function rigel_extra_fields_for_pages( $post ){
 	<?php } ?>
    </select>
    <?php }
+   
 //Extra Field for portfolio
 function rigel_extra_fields_for_portfolio( $post ){
 	?>

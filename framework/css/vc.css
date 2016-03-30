@@ -575,7 +575,13 @@ word-break: normal;
     -webkit-transition: color .3s ease-in-out, border-bottom-color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out, border-bottom-color .3s ease-in-out;
     transition: color .3s ease-in-out, border-bottom-color .3s ease-in-out;
-	
+}
+.rigel_box_v {
+    text-align: center;
+}
+.rigel_box_v i {
+    padding: 0px;
+    margin: 0px;
 }
 /*Progress bar*/
 .vc_progress_bar .vc_single_bar {

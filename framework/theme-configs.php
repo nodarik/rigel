@@ -263,6 +263,22 @@ $sections[] = array(
                         'on' => 'Enabled',
                         'off' => 'Disabled',
                 ) ,
+			array( 
+						'id'       => 'header-border',
+						'type'     => 'border',
+						'title'    => esc_html__('Header Border Option', 'rigel'),
+						'subtitle' => esc_html__('Only color validation can be done on this field type', 'rigel'),
+						'output'   => array('.site-header'),
+						'desc'     => esc_html__('This is the description field, again good for additional info.', 'rigel'),
+						'default'  => array(
+							'border-color'  => '#1e73be', 
+							'border-style'  => 'solid', 
+							'border-top'    => '3px', 
+							'border-right'  => '3px', 
+							'border-bottom' => '3px', 
+							'border-left'   => '3px'
+						)
+					),
                 array(
                         'id' => 'rigel_accent_color',
                         'type' => 'color',
