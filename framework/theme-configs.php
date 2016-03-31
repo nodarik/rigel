@@ -411,6 +411,18 @@ $sections[] = array(
         // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
 
         'fields' => array(
+		
+		
+                                array(
+                                'id'       => 'fixed_header',
+                                'type'     => 'switch',
+                                'title'    => esc_html__('fixed Header', 'rigel'),
+                                'subtitle' => esc_html__('If enabled header will be fixed', 'rigel'),
+                                'default'  => true,
+                                'on' => 'Enabled',
+                                'off' => 'Disabled',
+                           
+                        ),
                 array(
                         'id' => 'header_layout',
                         'type' => 'image_select',

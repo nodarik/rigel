@@ -1,5 +1,5 @@
 <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
-<div class="rigel_header_holder header_v2 fixed_menu">
+<div class="rigel_header_holder header_v2 fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
     <div class="first-row">
         <div class="container">
             <div class="row">

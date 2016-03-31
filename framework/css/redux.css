@@ -353,7 +353,7 @@ li#wp-admin-bar-redux_options {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-	width: 100px;
+	width: 100%;
 }
 .redux-container .redux-main .select2-container .select2-choice .select2-arrow {
     width: 34px;

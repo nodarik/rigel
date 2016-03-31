@@ -57,11 +57,12 @@ version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 html {
+
 overflow-y: scroll;
 min-height: 100%;
 
 }
-}
+
 body {
 background-color: #fff;
 overflow: hidden;
@@ -285,7 +286,6 @@ background: #fae7cf;
 padding: 20px 20px 0px 0;
 }
 .rigel_full_blog_post_date {
-
 border-bottom: 1px solid #ccc;
 text-transform: uppercase;
 }
@@ -428,11 +428,9 @@ top: 220px;
 position: absolute;
 width: 100%;
 }
-
 .rigel_header_holder.fixed_menu.bot {
 padding-top: 0px !important;
 width: 96.8%;
-
 }
 .bot-pos .second-row {
 top: 70px;
@@ -441,7 +439,6 @@ top: 70px;
 z-index: 99;
 padding-top: 150px;
 background: #fff;
-
 top: 0;
 width: 100%;
 transition: all 0.2s;
@@ -451,9 +448,8 @@ transition: all 0.2s;
 -khtml-transition: padding-bottom 0.2s;
 -ms-transition: padding-bottom 0.2s;
 }
-.bot-pos .rigel_header_holder {
+.bot-pos .rigel_fixed_header {
 position: fixed;
-
 }
 .menu-o .rigel_header_holder {
 background: #fff;
@@ -552,8 +548,33 @@ padding-top: 5px !important;
 padding-bottom: 20px;
 }
 }
-
-
+/* header_v1 */
+.header_v1 .rigel_logo_holdred {
+    text-align: left;
+}
+.header_v1 .rigel_logo_holdred a {
+    float: left;
+}
+.header_v1 .second-row {
+    top: 170px !important;
+    width: 95%;
+}
+.bot-pos .header_v1 .second-row {
+    top: 97px !important;
+    width: 100%;
+}
+.header_v1 .second-row {
+background: #FFFFFF; 
+}
+.menu-o .wide_cont {
+    margin-top: 100px !important;
+}
+.header_v1 .search-form {
+bottom: 15px;
+}
+.rigel_header_holder.header_v1 .search-field {
+    padding: 7px 10px 0px 10px;
+}
 /**
 * 3.0 - logo
 */
@@ -1429,9 +1450,7 @@ transition: margin-top 0.3s;
 -khtml-transition: margin-top 0.3s;
 -ms-transition: margin-top 0.3s;
 }
-.menu-o .wide_cont {
-margin-top: 240px;
-}
+
 .bot-pos.menu-o .wide_cont {
 margin-top: 270px;
 }

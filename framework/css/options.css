@@ -9,7 +9,7 @@
 	font-family: 'montserrat' !important;
 }
 .rigel_typo_menu {
-	    font-family: montserrat !important;
+	    font-family: Roboto Slab !important;
 }
 
 h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_large, .sub_title, .rigel_footer_contact a {
@@ -25,8 +25,8 @@ h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_larg
 	}
 
 	.rigel_menu_content_holder > ul > li > a, .header_menu > li > .my_drop > ul > li > a { 
-	font-weight: montserrat !important;
-    font-family: montserrat !important;
+	font-weight: Roboto Slab !important;
+    font-family: Roboto Slab !important;
     font-size: 13px !important;
     line-height: 22px !important;
 	color: #28262b !important;
@@ -120,12 +120,21 @@ background-color: #ffffff;
 .rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:#ffffff !important;}
 
 html {
-border-top: 30px;
-border-right: 40px;
-border-bottom: 50px;
-border-left: 60px;
+border-top: 16px;
+border-right: 0px;
+border-bottom: 0px;
+border-left: 0px;
 border-style: solid;
-border-color: #eeee22;
+border-color: #f4f4f1;
 }
 
 
+@media screen and (min-width: 1400px){
+html {
+border-width: 2rem;
+}
+}
+@media screen and (min-width: 1024px){
+html {
+border-width: 1.5rem;
+}
