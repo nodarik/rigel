@@ -556,15 +556,14 @@ padding-bottom: 20px;
     float: left;
 }
 .header_v1 .second-row {
-    top: 170px !important;
-    width: 95%;
+    top: 110px !important;
 }
 .bot-pos .header_v1 .second-row {
     top: 97px !important;
     width: 100%;
 }
 .header_v1 .second-row {
-background: #FFFFFF; 
+background: #f1f1f1; 
 }
 .menu-o .wide_cont {
     margin-top: 100px !important;
@@ -1079,6 +1078,17 @@ display: block;
 /**
 * 7.0 - Templates
 */
+
+/* blank tempate*/
+.page-template-blank .rigel_custom_footer_holder, 
+.page-template-blank .title_area, 
+.page-template-blank .rigel_header_holder, 
+.page-template-blank .rigel_footer_holder, 
+.page-template-blank .tag_line 
+{ display:none;}
+.page-template-blank body 
+{ background:#fff;}
+
 .rigel-overlay {
 background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC")
 }

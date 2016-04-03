@@ -2,10 +2,6 @@
 	// Template Name: Blank Template
 ?>
 <?php get_header(); ?>
-<style>
-.rigel_custom_footer_holder, .title_area, .rigel_header_holder, .rigel_footer_holder, .tag_line { display:none;}
-body { background:#fff;}
-</style>
                 <div class="main_content_area" id="akceptor">
                     <div class="container">
                         <div class="row">

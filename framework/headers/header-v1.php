@@ -10,7 +10,7 @@
 		<a href="<?php echo esc_url(home_url('/')); ?>"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
 	<?php endif; ?>
 					
-					<?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?>
+					<a href="<?php echo esc_url(home_url('/')); ?>" class="logo_tagline"><?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?></a>
 					
                 </div>
                 <div class="rigel_menu_content_holder col-xs-2">

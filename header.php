@@ -13,7 +13,7 @@
     <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
     <?php
      if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
-     <link rel="shortcut icon" href="<?php  echo esc_url(stripslashes($rigel_opt_data['rigel_header_favicon']['url'])); ?>">
+     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
    <?php  }
     ?>
         <?php wp_head(); ?>

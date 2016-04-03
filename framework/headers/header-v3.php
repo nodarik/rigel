@@ -1,5 +1,5 @@
 <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
-<div class="rigel_header_holder header_v1  fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
+<div class="rigel_header_holder header_v3  fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
     <div class="first-row">
         <div class="container">
             <div class="row">
@@ -8,8 +8,8 @@
 		if(isset($rigel_opt_data['rigel_logo_upload']['url']) && $rigel_opt_data['rigel_logo_upload']['url']) :?>
 		<a href="<?php echo esc_url(home_url('/')); ?>"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
 	<?php endif; ?>
-					<?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?>
 					
+						<a href="<?php echo esc_url(home_url('/')); ?>" class="logo_tagline"><?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?></a>
                 </div>
                 <div class="rigel_menu_content_holder col-xs-2">
 				
@@ -26,8 +26,14 @@
             <div class="row">
 
                 <div class="rigel_menu_content_holder col-md-9">
-				<a href="<?php echo esc_url(home_url('/')); ?>" class="secondary_logo"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
-                    <?php if ( has_nav_menu( 'main_menu' ) ){
+				<?php
+		if(isset($rigel_opt_data['rigel_logo_upload']['url']) && $rigel_opt_data['rigel_logo_upload']['url']) :?>
+		<a href="<?php echo esc_url(home_url('/')); ?>" class="secondary_logo"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
+	<?php endif; ?>
+	
+				
+    
+	<?php if ( has_nav_menu( 'main_menu' ) ){
                         $walker = new rigel_Walker;
                         wp_nav_menu(array(
                                             'echo' => true,

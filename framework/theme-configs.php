@@ -219,19 +219,7 @@ $sections[] = array(
         // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
 
         'fields' => array(
-                array(
-                        'id' => 'rigel_header_favicon',
-                        'type' => 'media',
-                        'url' => true,
-                        'title' => esc_html__('Favicon Upload', "rigel") ,
-                        'desc' => esc_html__('Upload your favicon the url', "rigel") ,
-                        'subtitle' => esc_html__('Upload image using the native media uploader, or define the URL directly', "rigel") ,
-                                        'default'  => array(
-                                'url' => $theme_path_images . 'favicon.ico'
-                        ),
-
-                ) ,
-                array(
+                      array(
                         'id' => 'rigel_logo_upload',
                         'type' => 'media',
                         'url' => true,
