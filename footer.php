@@ -70,7 +70,7 @@
 			   
 			   <?php
 		if(isset($rigel_opt_data['footer_logo_upload']['url']) && $rigel_opt_data['footer_logo_upload']['url']) :?>
-		<img alt="" style="max-width:200px;" src="<?php echo esc_url($rigel_opt_data['footer_logo_upload']['url'])?>"/> 
+		<img alt=""  src="<?php echo esc_url($rigel_opt_data['footer_logo_upload']['url'])?>"/> 
 	<?php endif; ?>
 			   
 			   

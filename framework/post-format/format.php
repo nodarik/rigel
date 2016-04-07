@@ -17,7 +17,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 		<div class="rigel_blog_meta">
 				<div class="rigel_by_author">By <?php the_author_posts_link() ?></div>
 				<div class="rigel_post_tags"><?php $posttags = get_the_tags(); if (!$posttags){echo esc_html__("No tags","rigel");}else{the_tags('');}; ?> </div>
-				<div class="rigel_post_comments"><a href="<?php the_permalink() ?>#comments"><?php comments_number('0','1','%')?>  <?php echo esc_html__("Comments","rigel")?></a></div>
+				<div class="rigel_post_comments"><a href="<?php esc_url(the_permalink()) ?>#comments"><?php comments_number('0','1','%')?>  <?php echo esc_html__("Comments","rigel")?></a></div>
          </div>
     </div>
     <?php };?>
@@ -26,7 +26,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
         	
             <div class="rigel_blog_full_content_holder">
                 <div class="rigel_blog_head">
-                    <h3 class="rigel_blog_post_title"><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?> </a></h3>
+                    <h3 class="rigel_blog_post_title"><a href="<?php echo esc_url(the_permalink()); ?>"><?php the_title(); ?> </a></h3>
                    
                 </div>
                 
@@ -42,7 +42,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
             
             <div class="rigel_blog_item_content">
                 <div class="rigel_blog_item_main_content">
-                    <?php the_content('<div class="rigel_read_more"><a class="rigel_readmore_btn" href="'. get_permalink($post->ID) . '">'. esc_html__(" Read More","rigel") .'</a></div>'); ?>
+                    <?php the_content('<div class="rigel_read_more"><a class="rigel_readmore_btn" href="'. esc_url(get_permalink($post->ID)) . '">'. esc_html__(" Read More","rigel") .'</a></div>'); ?>
                 </div>
             </div>
             
@@ -57,7 +57,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 		<div class="rigel_blog_meta" style="text-align: left;">
 				<div class="rigel_by_author">By <?php the_author_posts_link() ?></div>
 				<div class="rigel_post_tags"><?php $posttags = get_the_tags(); if (!$posttags){echo esc_html__("No tags","rigel");}else{the_tags('');}; ?> </div>
-				<div class="rigel_post_comments"><a href="<?php the_permalink() ?>#comments"><?php comments_number('0','1','%')?>  <?php echo esc_html__("Comments","rigel")?></a></div>
+				<div class="rigel_post_comments"><a href="<?php esc_url(the_permalink()) ?>#comments"><?php comments_number('0','1','%')?>  <?php echo esc_html__("Comments","rigel")?></a></div>
          </div>
     </div>
     <?php };?>

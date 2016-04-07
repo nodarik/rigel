@@ -30,10 +30,10 @@ $sb_pos =  get_post_meta($post->ID, 'sidebarss_position', 1);
                 <div class="rigel_share">
                     <div class="rigel_post_share_icons">
                         <div class="rigel_soc_icons">
-                            <a href="https://twitter.com/share?url=<?php the_permalink()?>" title="Twitter" target="_blank"><div class="fa fa-twitter"></div></a>
-                            <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink()?>" title="Facebook" target="_blank"><div class="fa fa-facebook"></div></a>
-                            <a href="https://plus.google.com/share?url=<?php the_permalink()?>" title="Google+" target="_blank"><div class="fa fa-google-plus"></div></a>
-                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink()?>" title="LinkedIn" target="_blank"><div class="fa fa-linkedin"></div></a>
+                            <a href="https://twitter.com/share?url=<?php esc_url(the_permalink())?>" title="Twitter" target="_blank"><div class="fa fa-twitter"></div></a>
+                            <a href="http://www.facebook.com/sharer.php?u=<?php esc_url(the_permalink())?>" title="Facebook" target="_blank"><div class="fa fa-facebook"></div></a>
+                            <a href="https://plus.google.com/share?url=<?php esc_url(the_permalink())?>" title="Google+" target="_blank"><div class="fa fa-google-plus"></div></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php esc_url(the_permalink())?>" title="LinkedIn" target="_blank"><div class="fa fa-linkedin"></div></a>
                         </div>
                     </div>
                 </div>
