@@ -10,9 +10,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 	// Add Support
 	add_theme_support( 'woocommerce' );
 	
-	// Disable WooCommerce styles 
-	//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-	
 	// Define Wrapper
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 	remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
@@ -42,44 +39,44 @@ if ( class_exists( 'WooCommerce' ) ) {
 	}
 		
 	// Products per page
-	add_filter('loop_shop_per_page', 'custom_product_count');
-	if (!function_exists('custom_product_count')) {
-		function custom_product_count() {
+	add_filter('loop_shop_per_page', 'rigel_custom_product_count');
+	if (!function_exists('rigel_custom_product_count')) {
+		function rigel_custom_product_count() {
 			$product_count = 9;
 			return $product_count;
 		}
 	}
 	
 	// Add image wrap
-	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_product_thumbnail_wrap_open', 9, 2);
-	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_product_thumbnail_wrap_close', 14, 2);
+	add_action( 'woocommerce_before_shop_loop_item_title', 'rigel_woocommerce_product_thumbnail_wrap_open', 9, 2);
+	add_action( 'woocommerce_before_shop_loop_item_title', 'rigel_woocommerce_product_thumbnail_wrap_close', 14, 2);
 
-	if (!function_exists('woocommerce_product_thumbnail_wrap_open')) {
-		function woocommerce_product_thumbnail_wrap_open() {
+	if (!function_exists('rigel_woocommerce_product_thumbnail_wrap_open')) {
+		function rigel_woocommerce_product_thumbnail_wrap_open() {
 			echo '<div class="img-wrap">';
 		}
 	}
 
-	if (!function_exists('woocommerce_product_thumbnail_wrap_close')) {
-		function woocommerce_product_thumbnail_wrap_close() {
+	if (!function_exists('rigel_woocommerce_product_thumbnail_wrap_close')) {
+		function rigel_woocommerce_product_thumbnail_wrap_close() {
 			echo '</div>';
 		}
 	}
 	
 	// Add the inner div in product loop
-	add_action( 'woocommerce_before_shop_loop_item_title', 'artificer_product_inner_open', 14, 2);
-	add_action( 'woocommerce_after_shop_loop_item_title', 'artificer_product_inner_close', 12, 2);
+	add_action( 'woocommerce_before_shop_loop_item_title', 'rigel_artificer_product_inner_open', 14, 2);
+	add_action( 'woocommerce_after_shop_loop_item_title', 'rigel_artificer_product_inner_close', 12, 2);
 
-	function artificer_product_inner_open() {
+	function rigel_artificer_product_inner_open() {
 		echo '<div class="product-inner">';
 	}
-	function artificer_product_inner_close() {
+	function rigel_artificer_product_inner_close() {
 		echo '</div>';
 	}
 	
 	// Change rating position
-	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
-	add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 11 );
+	remove_action( 'woocommerce_after_shop_loop_item_title', 'rigel_woocommerce_template_loop_rating', 5 );
+	add_action( 'woocommerce_after_shop_loop_item_title', 'rigel_woocommerce_template_loop_rating', 11 );
 	
 	// Change linked product count in a row
 	function woocommerce_upsell_display( $posts_per_page = 3, $columns = 3, $orderby = 'rand' ) {
@@ -93,9 +90,9 @@ if ( class_exists( 'WooCommerce' ) ) {
 	}
 	
 	// The cart fragment (ensures the cart button updates via AJAX)
-	add_filter('add_to_cart_fragments', 'woocommerce_cart_button_fragment');
+	add_filter('add_to_cart_fragments', 'rigel_woocommerce_cart_button_fragment');
 	
-	function woocommerce_cart_button_fragment( $fragments ) {
+	function rigel_woocommerce_cart_button_fragment( $fragments ) {
 		global $woocommerce;
 		ob_start();
 		woocommerce_cart_button();
