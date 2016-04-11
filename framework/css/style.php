@@ -54,7 +54,7 @@ font-family: '<?php echo esc_attr($rigel_opt_data['rigel_typo_headers']['font-fa
 	}
 
 
-
+.title_bg:before{ background-color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important; }
 
 
 .rigel_menu_content_holder > ul > li:hover > a {color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important;}

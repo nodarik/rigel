@@ -38,9 +38,12 @@ if($rigel_opt_data['page_preload']) {?>
 
 		// Include Header
 		if($rigel_opt_data['header_layout']) {
-			get_template_part( 'framework/headers/header-'.$rigel_opt_data['header_layout'] );
+			
+			require_once( trailingslashit( get_template_directory() ). 'framework/headers/header-'.$rigel_opt_data['header_layout'].'.php');
+
 		} else {
-			get_template_part('framework/headers/header-v2.php');
+			require_once( trailingslashit( get_template_directory() ). 'framework/headers/header-v2.php' );
+
 		}
 
 
