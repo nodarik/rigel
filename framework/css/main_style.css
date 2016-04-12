@@ -289,6 +289,12 @@ padding: 20px 20px 0px 0;
 border-bottom: 1px solid #ccc;
 text-transform: uppercase;
 }
+.rigel_full_blog_post_date .rigel_date_d.colored {
+text-align: left;
+}
+.col-md-2 .rigel_blog_meta {
+text-align: left;
+}
 .blog .rigel_blog_item_main_content div,
 .page-template-blog .rigel_blog_item_main_content div {
 max-width: 100% !important
@@ -318,7 +324,7 @@ width: 100% !important
 margin-bottom: 8px;
 list-style: none !important;
 }
-/*Flex slider ovveride*/
+/*Flex slider overide*/
 
 .flex-direction-nav a {
 top: 50% !important;
@@ -480,6 +486,7 @@ height: 20px;
 padding: 0;
 width: 20px;
 margin-left: -35px;
+background: url(img/magnif.png);
 }
 .rigel_header_holder #searchform>div {
 margin-right: 15px;
@@ -586,6 +593,12 @@ max-width: 100%;
 position: relative;
 z-index: 9999;
 text-align: center;
+}
+.rigel_menu_content_holder .alert.alert-success {
+margin-top: 10px !important;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
 }
 .logo_tagline {
 display: inline-block;
@@ -1016,6 +1029,9 @@ cursor: pointer;
 margin-left: -15px;
 pointer-events: none;
 }
+.footer-wraper .row .col-lg-12 {
+padding-left: 0px;
+}
 .hidden_footer {
 display:none;
 }
@@ -1073,6 +1089,7 @@ font-size: 30px;
 font-weight: 700;
 letter-spacing: 2px !important;
 display: block;
+margin: 0px;
 }
 
 /**
@@ -1848,6 +1865,9 @@ display: none;
 background: #f2f2f2;
 border: 1px solid #ededed;
 }
+#contact-form .input-text {
+width: 100%;
+}
 input,
 textarea {
 padding: 10px;
@@ -2166,6 +2186,7 @@ outline: none !important;
 box-shadow: none !important;
 border: 1px dotted #ededed;
 padding: 10px;
+width: 100%;
 }
 #respond #comment:focus {
 border: 1px solid #ddd;
@@ -3022,6 +3043,27 @@ margin-bottom: 40px;
 }
 .rigel_folio_custom_page_title {
 padding-top: 0px;
+}
+.404_page{
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    min-height: 200px;
+}
+/**
+.error404 .rigel_header_holder, 
+.error404 .rigel_custom_footer_holder, 
+.error404 .rigel_footer_holder, 
+.error404 .tag_line 
+{ display:none;}
+*/
+.rigel_not_found_error{
+	text-align:center;
 }
 /**
 * 18.0 - Page loader

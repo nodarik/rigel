@@ -40,7 +40,7 @@
 												'menu_class' => 'header_menu',
 												'walker' => $walker
 						));
-						} else { echo wp_kses(_e('<div class="alert alert-success" style="margin-top:10px !important; margin-bottom:10px; margin-left:20px;margin-right:20px;"><strong>Set up your FIRST menu</strong><br> Appearance -> Menus -> Create your menu -> Choose it in "Theme Location" block</div>', 'rigel'),array( 'strong' => array( ) ));}
+						} else { echo wp_kses(_e('<div class="alert alert-success"><strong>Set up your FIRST menu</strong><br> Appearance -> Menus -> Create your menu -> Choose it in "Theme Location" block</div>', 'rigel'),array( 'strong' => array( ) ));}
 						?>
                 </div>
               

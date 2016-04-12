@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>" />  
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	
     <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
     <?php
      if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
@@ -56,7 +51,7 @@ if($rigel_opt_data['page_preload']) {?>
     ?>
 
 	<?php if (($rigel_opt_data['tagline'] == true && get_post_meta($post->ID, 'tagline_position', 1) != "Hide")) {?>
-    <div class="tag_line" style="margin-bottom:40px;">
+    <div class="tag_line">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 rigel_blog_post_title_inner"> 
@@ -67,8 +62,7 @@ if($rigel_opt_data['page_preload']) {?>
                     <h3><?php the_title(); ?></h3>
                     <?php }?>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 text-right rigel_breadcrumbs">
-                    <?php rigel_breadcrumbs()?> 
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                 </div>
                 <?php if ( is_single() && (in_array('single-portfolio',$classes))) { ?>
                    <div class="rigel_blog_meta"><div class="rigel_port_meta">

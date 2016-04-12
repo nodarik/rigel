@@ -65,8 +65,8 @@ $sb_pos =  get_post_meta($post->ID, 'sidebarss_position', 1);
                 <?php if ( is_user_logged_in() ) { ?>
                 <div id="respond">
                 <h4><?php comment_form_title( esc_html__('Leave a Reply', 'rigel'), esc_html__('Leave a Reply to %s', 'rigel') ); ?></h4>
-                <form class="form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="contact-form">
-                <textarea placeholder="Message" id="comment" name="comment" class="input-text" rows="5" style="width:100%"></textarea><br><br>
+                <form class="form" action="<?php esc_url(get_option('siteurl')); ?>/wp-comments-post.php" method="post" id="contact-form">
+                <textarea placeholder="Message" id="comment" name="comment" class="input-text" rows="5"></textarea><br><br>
                 <button name="submit" id="submit_form" type="submit"  class="btn rigel_submit"><?php esc_html_e( "Replay", "rigel" ) ?></button>
                 <div><?php comment_id_fields(); ?></div>
                 <?php do_action('comment_form', get_the_ID()); ?>
@@ -74,10 +74,10 @@ $sb_pos =  get_post_meta($post->ID, 'sidebarss_position', 1);
                 </div>
                 <?php }else { ?>
                  <h4><?php comment_form_title( esc_html__('Leave a Reply', 'rigel'), esc_html__('Leave a Reply to %s', 'rigel') ); ?></h4>
-                <form class="form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="contact-form">
-                <input type="text" class="input-text" style="width:100%" placeholder="Name" name="author" value="<?php if (isset($comment_author)){ echo esc_attr($comment_author); } ?>" /><br><br>
-                <input  class="input-text" type="text" style="width:100%" placeholder="E-mail" name="email" value="<?php if (isset($comment_author_email)){ echo esc_attr($comment_author_email); }?>" /><br><br>
-                <textarea placeholder="Message" id="comment" name="comment" class="input-text" rows="5" style="width:100%"></textarea>
+                <form class="form" action="<?php echo esc_url(get_option('siteurl')); ?>/wp-comments-post.php" method="post" id="contact-form">
+                <input type="text" class="input-text" placeholder="Name" name="author" value="<?php if (isset($comment_author)){ echo esc_attr($comment_author); } ?>" /><br><br>
+                <input  class="input-text" type="text" placeholder="E-mail" name="email" value="<?php if (isset($comment_author_email)){ echo esc_attr($comment_author_email); }?>" /><br><br>
+                <textarea placeholder="Message" id="comment" name="comment" class="input-text" rows="5"></textarea>
 				<br>
 				<br>
                 <button name="submit" id="submit_form" type="submit"  class="btn rigel_submit"><?php esc_html_e( "Replay", "rigel" ) ?></button>

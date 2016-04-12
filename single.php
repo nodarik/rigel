@@ -41,7 +41,7 @@ $rigel_opt_data['blog_sidebar_position'] = esc_html__("Right Sidebar", "rigel");
 									<?php if ( is_user_logged_in() ) { ?>
                 						<div id="respond">
                 							<h4><?php comment_form_title( esc_html__('Leave a Reply', 'rigel'), esc_html__('Leave a Reply to %s', 'rigel' )); ?></h4>
-                							<form class="form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="contact-form">
+                							<form class="form" action="<?php echo esc_url(get_option('siteurl')); ?>/wp-comments-post.php" method="post" id="contact-form">
                 								<textarea placeholder="<?php echo esc_html_e('Message', 'rigel'); ?>" id="comment" name="comment" class="input-text" rows="5" ></textarea><br><br>
                 								<button name="submit" id="submit_form" type="submit"  class="btn rigel_submit"><?php esc_html_e( "Replay", "rigel" ); ?></button>
                 								<div><?php comment_id_fields(); ?></div>
@@ -50,7 +50,7 @@ $rigel_opt_data['blog_sidebar_position'] = esc_html__("Right Sidebar", "rigel");
                 						</div>
                 					<?php }else { ?>
                 						<h4><?php comment_form_title( esc_html__('Leave a Reply', 'rigel'), esc_html__('Leave a Reply to %s', 'rigel')); ?></h4>
-                						<form class="form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="contact-form">
+                						<form class="form" action="<?php echo esc_url(get_option('siteurl')); ?>/wp-comments-post.php" method="post" id="contact-form">
                 							<input type="text" class="input-text" placeholder="<?php echo esc_html_e('Name', 'rigel'); ?>" name="author" value="<?php if (isset($comment_author)){ echo esc_attr($comment_author); } ?>" /><br><br>
                 							<input  class="input-text" type="text" placeholder="<?php echo esc_html_e('E-mail', 'rigel'); ?>" name="email" value="<?php if (isset($comment_author_email)){ echo esc_attr($comment_author_email); }?>" /><br><br>
                 							<textarea placeholder="<?php echo esc_html_e('Message', 'rigel'); ?>" id="comment" name="comment" class="input-text" rows="5"></textarea><br><br>

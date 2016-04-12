@@ -14,7 +14,7 @@
             
             <div class="rigel_post_format_content">
                  <div class="rigel_post_format_content">
-					<?php echo get_post_meta($post->ID, '_format_video_embed', true); ?>
+					<?php esc_html(get_post_meta($post->ID, '_format_video_embed', true)); ?>
                 </div>
             </div>
             

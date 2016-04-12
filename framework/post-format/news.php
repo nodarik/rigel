@@ -23,6 +23,6 @@
     	<h4 class="rigel_news_title"><a href="<?php echo esc_url(the_permalink()); ?>"><?php the_title(); ?> </a></h4>
         <?php $content = get_the_content();
 		$content = strip_tags($content);
-		echo substr($content, 0, 320);?> ...
+		echo esc_attr(substr($content, 0, 320));?> ...
     </div>
 </div>

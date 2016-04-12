@@ -283,7 +283,7 @@ $sections[] = array(
                 array(
                         'id' => 'tagline',
                         'type' => 'switch',
-                        'title' => esc_html__('Switch on tagline?', 'rigel') ,
+                        'title' => esc_html__('Switch on page titles?', 'rigel') ,
                         'default' => false,
                         'on' => 'Enabled',
                         'off' => 'Disabled',

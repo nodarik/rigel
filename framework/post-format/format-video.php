@@ -10,7 +10,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 	<?php if($rigel_opt_data['blog_sidebar_position'] == esc_html__("Right Sidebar", "rigel") ) {?>
 	<div class="col-md-2 col-sm-2">
     	<div class="rigel_full_blog_post_date">
-			<div class="rigel_date_d colored"><?php echo get_the_date( 'd M Y', $post->ID ); ?></div>
+			<div class="rigel_date_d colored"><?php esc_html(get_the_date( 'd M Y', $post->ID )); ?></div>
 			
         </div>
 		<div class="rigel_blog_meta">
@@ -32,7 +32,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
             </div>
             
             <div class="rigel_post_format_content">
-                <?php echo get_post_meta($post->ID, '_format_video_embed', true); ?>
+                <?php echo esc_html(get_post_meta($post->ID, '_format_video_embed', true)); ?>
             </div>
             
             <div class="rigel_blog_item_content">
@@ -46,10 +46,10 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
     <?php if($rigel_opt_data['blog_sidebar_position'] == esc_html__("Left Sidebar", "rigel") ) {?>
 	<div class="col-md-2">
       	<div class="rigel_full_blog_post_date" >
-			<div class="rigel_date_d colored" style="text-align: left;"><?php echo get_the_date( 'd M Y', $post->ID ); ?></div>
+			<div class="rigel_date_d colored"><?php echo esc_html(get_the_date( 'd M Y', $post->ID )); ?></div>
 			
         </div>
-		<div class="rigel_blog_meta" style="text-align: left;">
+		<div class="rigel_blog_meta">
 				<div class="rigel_by_author">By <?php the_author_posts_link() ?></div>
 				<div class="rigel_post_tags"><?php $posttags = get_the_tags(); if (!$posttags){echo esc_html__("No tags","rigel");}else{the_tags('');}; ?> </div>
 				<div class="rigel_post_comments"><a href="<?php esc_url(the_permalink()) ?>#comments"><?php comments_number('0','1','%')?>  <?php echo esc_html__("Comments","rigel")?></a></div>

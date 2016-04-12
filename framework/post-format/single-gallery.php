@@ -16,13 +16,13 @@
                  <div id="port_slider" class="flexslider rigel_flex_loading rigel_vc_gal">
                     <ul class="slides">
 				 <?php  	 if (get_post_meta($post->ID, 'image', true)) { ?>
-                        <li><img src="<?php  	 echo get_post_meta($post->ID, 'image', true); ?>" alt="" /></li>
+                        <li><img src="<?php  	 echo esc_url(get_post_meta($post->ID, 'image', true)); ?>" alt="" /></li>
                     <?php  	 } ?>
                     <?php  	 if (get_post_meta($post->ID, 'image2', true)) { ?>
-                        <li><img src="<?php  	 echo get_post_meta($post->ID, 'image2', true); ?>" alt="" /></li>
+                        <li><img src="<?php  	 echo esc_url(get_post_meta($post->ID, 'image2', true)); ?>" alt="" /></li>
                     <?php  	 } ?>
                     <?php  	 if (get_post_meta($post->ID, 'image3', true)) { ?>
-                        <li><img src="<?php  	 echo get_post_meta($post->ID, 'image3', true); ?>" alt="" /></li>
+                        <li><img src="<?php  	 echo esc_url(get_post_meta($post->ID, 'image3', true)); ?>" alt="" /></li>
                     <?php  	 } ?>
                     </ul>
                 </div>

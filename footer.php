@@ -1,16 +1,37 @@
 <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
 </div>
 <div class="rigel_footer_custom_content  <?php if ($rigel_opt_data['hidden_footer']) { ?> hidden_footer <?php }?> ">
-<div class="copyright-text"><?php echo  do_shortcode($rigel_opt_data['bottom_line_text']) ?></div>
+<div class="copyright-text"><?php echo  esc_attr(do_shortcode($rigel_opt_data['bottom_line_text'])) ?></div>
     <div class="container">
         <div class="footer-wraper">
             <div class="rigel_footer_header"></div>			
 				
             <div class="row <?php if ($rigel_opt_data['hidden_footer']) { ?> hidden_footer <?php }?>">
-                <div class="col-lg-12" style="padding-left:0;">
-				
-				
-                    <?php echo  do_shortcode($rigel_opt_data['footer_left']) ?>
+                <div class="col-lg-12">
+				                				
+                    <?php echo  wp_kses(do_shortcode($rigel_opt_data['footer_left']), array(
+					 'ul' =>  array(
+						'class' => array()),
+					 'li' => array(),
+					'h1' => array(),
+					'h2' => array(),
+					'h3' => array(),
+					'h4' => array(),
+					'h5' => array(),
+					'h6' => array(),
+					'a' => array(
+						'href' => array(),
+						'title' => array()
+						),
+					'img' => array(
+						'scr' => array(),
+						'alt' => array()
+						),
+					'br' => array(),
+					'em' => array(),
+					'strong' => array(),
+					))?>
+					 					 
 					 <!--Social networks-->
 					 
 					<ul class="rigel_social_networks">

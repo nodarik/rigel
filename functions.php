@@ -77,6 +77,8 @@ if ( !function_exists( 'rigel_load_scripts' ) ) {
 		wp_enqueue_script('isotope', get_template_directory_uri().'/framework/js/jquery.isotope.min.js', array('jquery'), false, null , true);
 		wp_enqueue_script('flexslider', get_template_directory_uri().'/framework/FlexSlider/jquery.flexslider-min.js', array('jquery'), false, null , true);
 		wp_enqueue_script('rigel_custom', get_template_directory_uri().'/framework/js/custom.js', array('jquery'), false, null , true);
+		wp_enqueue_script( 'rigel-html5', get_template_directory_uri() . '/framework/js/html5.js', array(), '3.7.3' );
+		wp_script_add_data( 'rigel-html5', 'conditional', 'lt IE 9' );
 		
 		global $rigel_opt_data;
 		$rigel_theme = array( 
@@ -140,7 +142,7 @@ add_image_size( 'rigel-portfolio-wide', 762, 381, true );
 add_image_size( 'rigel-portfolio-long', 381, 762, true );
 
 /*=======================================
-	Register Sidebar UNLIMITED 
+	Register Sidebar 
 =======================================*/
 add_action( 'widgets_init', 'rigel_register_sidebars' );
 function rigel_register_sidebars() {
@@ -358,7 +360,7 @@ function rigel_extra_fields_for_pages( $post ){
 function rigel_extra_fields_for_portfolio( $post ){
 	?>
 	<h4><?php esc_html_e('Small Description', 'rigel'); ?></h4>
-    <textarea rows="10" style="width:300px;" type="text" name="extra[port-descr]" value="<?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?>" ><?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?></textarea>
+    <textarea rows="10" type="text" name="extra[port-descr]" value="<?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?>" ><?php echo esc_attr(get_post_meta($post->ID, 'port-descr', true)); ?></textarea>
     <h4><?php esc_html_e('Thumbnail', 'rigel'); ?></h4>
     <select name="extra[rigel_th]">
     <?php $rigel_thumb_array = array(
@@ -381,14 +383,14 @@ function rigel_extra_fields_for_portfolio( $post ){
     <div>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 1:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>	
 	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(); ?>" />
 	<p>
 		<label for="upload_image"><?php esc_html_e('Image 2:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image2]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image2', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image2]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image2', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>	
@@ -396,19 +398,19 @@ function rigel_extra_fields_for_portfolio( $post ){
 
 	<p>
 		<label for="upload_image"><?php esc_html_e('Image 3:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image3]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image3', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image3]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image3', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 4:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image4]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image4', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image4]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image4', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 5:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;"name="extra[image5]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image5', true)); ?>" />
+		<input id="upload_image" type="text" name="extra[image5]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image5', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
@@ -446,34 +448,34 @@ function rigel_extra_fields_for_blog( $post ){
     <div>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 1:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>	
-	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(); ?>" />
+	<input type="hidden" name="extra_fields_nonce" value="<?php echo esc_attr(wp_create_nonce()); ?>" />
 	<p>
 		<label for="upload_image"><?php esc_html_e('Image 2:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image2]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image2', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image2]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image2', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>	
-	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(); ?>" />
+	<input type="hidden" name="extra_fields_nonce" value="<?php echo esc_attr(wp_create_nonce()); ?>" />
 
 	<p>
 		<label for="upload_image"><?php esc_html_e('Image 3:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image3]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image3', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image3]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image3', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 4:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;" name="extra[image4]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image4', true)); ?>" />
+		<input id="upload_image" type="text"  name="extra[image4]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image4', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
     <p>
 		<label for="upload_image"><?php esc_html_e('Image 5:', 'rigel'); ?> </label>
-		<input id="upload_image" type="text" style="width:70%;"name="extra[image5]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image5', true)); ?>" />
+		<input id="upload_image" type="text" name="extra[image5]" value="<?php echo esc_attr(get_post_meta($post->ID, 'image5', true)); ?>" />
 		<input class="upload_image_button" type="button" value="<?php esc_html_e('Upload', 'rigel'); ?>" /><br/>
 
 	</p>
@@ -561,169 +563,9 @@ function wp_corenavi() {
   $a['next_text'] = esc_html__('Next', 'rigel'); 
   $a['total'] = $wp_query->max_num_pages;
 
-  echo  paginate_links($a);
+  echo  wp_kses_post(paginate_links($a));
 }
 
-/*=======================================
-	Add WP Breadcrumbs
-=======================================*/
-function rigel_breadcrumbs(){
-	/* === OPTIONS === */
-    $text['home']     = esc_html__( 'Home', 'rigel' ); // text for the 'Home' link
-    $text['category'] = esc_html__( 'Archive by Category "%s"', 'rigel' ); // text for a category page
-    $text['search']   = esc_html__( 'Search Results for "%s" Query', 'rigel' ); // text for a search results page
-    $text['tag']      = esc_html__( 'Posts Tagged "%s"', 'rigel' ); // text for a tag page
-    $text['author']   = esc_html__( 'Articles Posted by %s', 'rigel' ); // text for an author page
-    $text['404']      = esc_html__( 'Error 404', 'rigel' ); // text for the 404 page
- 
-    $show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
-    $show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
-    $show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
-    $show_title     = 1; // 1 - show the title for the links, 0 - don't 
-	$delimiter      = ' &nbsp;>&nbsp;'; // delimiter between crumbs
-    $before         = '<span class="current">'; // tag before the current crumb
-    $after          = '</span>'; // tag after the current crumb
-    /* === END OF OPTIONS === */
- 
-    global $post;
-    $home_link    = home_url('/');
-    $link_before  = '<span typeof="v:Breadcrumb">';
-    $link_after   = '</span>';
-    $link_attr    = ' rel="v:url" property="v:title"';
-    $link         = $link_before . '<a class="colored" ' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
-    $parent_id    = $parent_id_2 = $post->post_parent;
-    $frontpage_id = get_option('page_on_front');
- 
-    if (is_home() || is_front_page()) {
- 
-        if ($show_on_home == 1) echo '<div class="breadcrumbs"><a class="colored" href="' . esc_url($home_link) . '">' . esc_attr($text['home']) .'</a></div>';
- 
-    } else {
- 
-        echo '<div class="breadcrumbs">';
-        if ($show_home_link == 1) {
-            echo '<a class="colored" href="' . esc_url($home_link) . '" rel="v:url" property="v:title">' . esc_attr($text['home']) . '</a>';
-            if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo esc_attr($delimiter);
-        }
- 
-        if ( is_category() ) {
-            $this_cat = get_category(get_query_var('cat'), false);
-            if ($this_cat->parent != 0) {
-                $cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
-                if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
-                $cats = str_replace('<a  class="colored"', $link_before. '<a' . $link_attr, $cats);
-                $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-                if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-                echo esc_attr($cats);
-            }
-            if ($show_current == 1) echo esc_attr($before) . esc_attr(sprintf($text['category']), esc_attr(single_cat_title('', false))) . $after;
- 
-        } elseif ( is_search() ) {
-            echo esc_attr($before) . esc_attr(sprintf($text['search']), get_search_query()) . $after;
- 
-        } elseif ( is_day() ) {
-            echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-            echo sprintf($link, get_month_link(get_the_time('Y'),get_the_time('m')), get_the_time('F')) . $delimiter;
-            echo esc_attr($before) . esc_attr(get_the_time('d')) . $after;
- 
-        } elseif ( is_month() ) {
-            echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-            echo esc_attr($before) . get_the_time('F') . $after;
- 
-        } elseif ( is_year() ) {
-            echo esc_attr($before) . get_the_time('Y') . $after;
- 
-        } elseif ( is_single() && !is_attachment() ) {
-            if ( get_post_type() != 'post' ) {
-                $post_type = get_post_type_object(get_post_type());
-                $slug = $post_type->rewrite;
-                printf($link, esc_url($home_link) . '/' . esc_attr($slug['slug']) . '/', $post_type->labels->singular_name);
-                if ($show_current == 1) echo esc_attr($delimiter) . $before . esc_attr(get_the_title()) . $after;
-            } else {
-                $cat = get_the_category(); $cat = $cat[0];
-                $cats = get_category_parents($cat, TRUE, $delimiter);
-                if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
-                $cats = str_replace('<a', $link_before . '<a  class="colored"' . $link_attr, $cats);
-                $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-                if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-                echo esc_attr($cats);
-                if ($show_current == 1) echo esc_attr($before) . esc_attr(get_the_title()) . $after;
-            }
- 
-        } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-            $post_type = get_post_type_object(get_post_type());
-            echo esc_attr($before) . esc_attr($post_type->labels->singular_name) . $after;
- 
-        } elseif ( is_attachment() ) {
-            $parent = get_post($parent_id);
-            $cat = get_the_category($parent->ID); $cat = $cat[0];
-            if ($cat) {
-                $cats = get_category_parents($cat, TRUE, $delimiter);
-                $cats = str_replace('<a class="colored"', $link_before . '<a' . $link_attr, $cats);
-                $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-                if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-                echo esc_attr($cats);
-            }
-            printf($link, get_permalink($parent), $parent->post_title);
-            if ($show_current == 1) echo esc_attr($delimiter) . $before. get_the_title() . $after;
- 
-        } elseif ( is_page() && !$parent_id ) {
-            if ($show_current == 1) echo esc_attr($delimiter) . get_the_title() . $after;
- 
-        } elseif ( is_page() && $parent_id ) {
-            if ($parent_id != $frontpage_id) {
-                $breadcrumbs = array();
-                while ($parent_id) {
-                    $page = get_page($parent_id);
-                    if ($parent_id != $frontpage_id) {
-                        $breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
-                    }
-                    $parent_id = $page->post_parent;
-                }
-                $breadcrumbs = array_reverse($breadcrumbs);
-                for ($i = 0; $i < count($breadcrumbs); $i++) {
-                    echo esc_attr($breadcrumbs[$i]);
-                    if ($i != count($breadcrumbs)-1) echo esc_attr($delimiter);
-                }
-            }
-            if ($show_current == 1) {
-                if ($show_home_link == 1 || ($parent_id_2 != 0 && $parent_id_2 != $frontpage_id)) echo esc_attr($delimiter);
-                echo esc_attr($before) . esc_attr(get_the_title()) . $after;
-            }
- 
-        } elseif ( is_tag() ) {
-            echo esc_attr($before)  . esc_attr(sprintf($text['tag']), esc_attr(single_tag_title('', false))) . $after;
- 
-        } elseif ( is_author() ) {
-             global $author;
-            $userdata = get_userdata($author);
-            echo esc_attr($before) . esc_attr(sprintf($text['author']), esc_attr($userdata->display_name)) . $after;
- 
-        } elseif ( is_404() ) {
-            echo esc_attr($before) . esc_attr($text['404']) . $after;
-        }
- 
-        if ( get_query_var('paged') ) {
-            if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo esc_html__('(','rigel');
-            echo esc_html__('Page','rigel') . ' ' . get_query_var('paged');
-            if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo esc_html__(')','rigel');
-        }
-     echo '</div><!-- .breadcrumbs -->';
-     }
-		
-}
-function crumbs_tax($term_id, $tax, $sep){
-	$termlink = array();
-	while( (int)$term_id ){
-		$term2 = get_term( $term_id, $tax );
-		$termlink[] = '<a class="subpage_block" href="'. esc_url(get_term_link( (int)$term2->term_id, $term2->taxonomy )) .'">'. esc_attr($term2->name) .'</a>'. $sep;
-		$term_id = (int)$term2->parent;
-	}
-	$termlinks = array_reverse($termlink);
-	return implode('', $termlinks);
-}
- 
- 
 
 
 ?>
