@@ -1,6 +1,7 @@
 <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
-<div class="rigel_header_holder header_v2 fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
-	<?php if (($rigel_opt_data['top_social_networks_position']) !== "4") {?>
+<div class="rigel_header_holder header_v4 fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
+ 
+			<?php if (($rigel_opt_data['top_social_networks_position']) !== "4") {?>
 					
 					<div class="top_header_bar">
 						<ul class="rigel_top_social_networks style_<?php echo esc_attr($rigel_opt_data['top_social_networks_position']) ?>">
@@ -45,6 +46,7 @@
 						</ul>
 					</div>
 			<?php }; ?>  
+   
    <div class="first-row">
         <div class="container">
             <div class="row">
@@ -62,7 +64,7 @@
         <div class="container">
             <div class="row">
 			
-			<div class="rigel_logo_holdred col-xs-3">
+			<div class="rigel_logo_holdred col-xs-12">
 			
 			<?php
 		if(isset($rigel_opt_data['rigel_logo_upload']['url']) && $rigel_opt_data['rigel_logo_upload']['url']) :?>
@@ -75,7 +77,7 @@
                 </div>
            	
 
-                <div class="rigel_menu_content_holder col-md-9">
+                <div class="rigel_menu_content_holder col-md-12">
 					<?php if ( has_nav_menu( 'main_menu' ) ){
 							$walker = new rigel_Walker;
 							wp_nav_menu(array(

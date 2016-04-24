@@ -11,7 +11,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 	<?php if($rigel_opt_data['blog_sidebar_position'] == esc_html__("Right Sidebar", "rigel") ) {?>
 	<div class="col-md-2 col-sm-2">
     	<div class="rigel_full_blog_post_date">
-			<div class="rigel_date_d colored"><?php esc_html(get_the_date( 'd M Y', $post->ID )); ?></div>
+			<div class="rigel_date_d colored"><?php echo esc_html(get_the_date( 'd M Y', $post->ID )); ?></div>
 			
         </div>
 		<div class="rigel_blog_meta">

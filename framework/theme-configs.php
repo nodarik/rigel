@@ -411,6 +411,23 @@ $sections[] = array(
                                 'off' => 'Disabled',
                            
                         ),
+					
+						$fields = array(
+							'id'       => 'top_social_networks_position',
+							'type'     => 'radio',
+							'title'    => esc_html__('Sicial icons in header', 'rigel'), 
+							'subtitle' => esc_html__('choose icon position in the top header bar', 'rigel'),
+							'desc' => esc_html__('You can hide social icons in the header if you choose 4-th option', 'rigel'),
+							//Must provide key => value pairs for radio options
+							'options'  => array(
+								'1' => 'left', 
+								'2' => 'center', 
+								'3' => 'right',
+								'4' => 'hide'
+							),
+							'default' => '4',
+						),
+						
                 array(
                         'id' => 'header_layout',
                         'type' => 'image_select',
@@ -427,9 +444,13 @@ $sections[] = array(
                                         'img' => get_template_directory_uri() . '/framework/images/header2.png'
                                 ) ,
                                 'v3' => array(
-                                        'alt' => 'Header 2',
+                                        'alt' => 'Header 3',
                                         'img' => get_template_directory_uri() . '/framework/images/header3.png'
                                 ) ,
+							  'v4' => array(
+									'alt' => 'Header 4',
+									'img' => get_template_directory_uri() . '/framework/images/header4.png'
+							) ,
                         ) ,
                         'default' => 'v2'
                 ) ,

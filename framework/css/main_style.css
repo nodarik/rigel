@@ -210,6 +210,11 @@ padding: 20px;
 background: rgba(255, 255, 255, 0.2);
 max-width: 600px;
 }
+.bordered_image {
+-webkit-box-shadow: 8px -8px 0 0 #eee !important;
+-moz-box-shadow: 8px -8px 0 0 #eee !important;
+box-shadow: 8px -8px 0 0 #eee !important;
+}
 .btn {
 display: inline-block;
 padding: 6px 20px;
@@ -532,28 +537,19 @@ border-right: 1px solid rgba(255, 255, 255, 0.1);
 .head-col:last-child {
 border-right: 0;
 }
-/* header_v2 */
-.header_v2 .second-row {
-background: #fff;
+/*Page menu*/
+.page_menu ul li {
+    margin: 5px 0px;
+    text-align: left;
+    display: block;
+    line-height: 28px;
+	list-style: none;
 }
-.header_v2 #menu-toggle-wrapper {
-margin: 0 auto;
-}
-.header_v2.rigel_header_holder {
-background: #fff;
-
-}
-@media (max-width: 767px) and (min-width: 0px) {
-.header_v2 .rigel_logo_holdred {
-display: none;
-}
-.header_v2 #menu-word {
-display: block !important;
-}
-.header_v2.rigel_header_holder {
-padding-top: 5px !important;
-padding-bottom: 20px;
-}
+.page_menu ul li:before {
+    font-size: 26px;
+    color: white;
+    font-weight: 100;
+    padding-right: 11px;
 }
 /* header_v1 */
 .header_v1 .rigel_logo_holdred {
@@ -581,6 +577,102 @@ bottom: 15px;
 .rigel_header_holder.header_v1 .search-field {
     padding: 7px 10px 0px 10px;
 }
+.bot-pos .rigel_top_social_networks {
+	display:none;
+}
+/* header_v2 */
+.header_v2 .second-row {
+background: #fff;
+}
+.header_v2 #menu-toggle-wrapper {
+margin: 0 auto;
+}
+.header_v2.rigel_header_holder {
+background: #fff;
+
+}
+@media (max-width: 767px) and (min-width: 0px) {
+.header_v2 .rigel_logo_holdred {
+display: none;
+}
+.header_v2 #menu-word {
+display: block !important;
+}
+.header_v2.rigel_header_holder {
+padding-top: 5px !important;
+padding-bottom: 20px;
+}
+}
+/* header_v4 */
+.header_v4 .second-row .rigel_menu_content_holder {
+text-align: center;
+ padding: 15px 0px;
+}
+.header_v4 .logo_tagline {
+    float: initial;
+	text-align: center;
+	     transform: tnone !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+}
+.header_v4 .second-row {
+    padding-bottom: 0px;
+	padding: 20px 0px;
+    background: #ffffff;
+	    border-bottom: 1px dashed #E6E6E6;
+}
+.bot-pos .header_v4 .logo_tagline {
+    float: initial !important;
+	    -webkit-transform: none !important;
+    -moz-transform:none !important;
+    -ms-transform: none !important;
+}
+.bot-pos .header_v4 .rigel_menu_content_holder {
+    text-align: center;
+     transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform:none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+}
+.header_v4 #menu-toggle-wrapper {
+    width: 31px;
+    margin: 0 auto;
+}
+/*Top header bar*/
+.rigel_top_social_networks.style_1 {
+    text-align: left;
+}
+.rigel_top_social_networks.style_2 {
+    text-align: center;
+}
+.rigel_top_social_networks.style_3 {
+    text-align: right;
+}
+.rigel_top_social_networks {
+    margin: 0px;
+}
+.top_header_bar {
+    position: relative;
+    top: -10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+@media (max-width: 767px) and (min-width: 0px) {
+.top_header_bar {
+display:none;
+}
+}
+.top_header_bar .rigel_top_social_networks li {
+    margin: auto 7px;
+    position: relative;
+    display: inline-block;
+    color: #111;
+    list-style: none;
+}
+
 /**
 * 3.0 - logo
 */
@@ -1579,6 +1671,31 @@ height: 355px;
 .map-wraper {
 padding: 5px;
 }
+/*Instagram widget*/
+
+.rigel-stream.columns-3 ul li {
+    width: 33.33%;
+	padding-left: 15px;
+	border:none !important;
+}
+.rigel-stream ul li {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0 3px 6px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    overflow: hidden;
+}
+.rigel-stream.columns-3 ul li a:before {
+    display: none !important;
+}
 
 /**
 * 10.0 - Custom footer 
@@ -2121,10 +2238,6 @@ display: inline-block;
 margin-bottom: 3px;
 color: #000;
 }
-.tagcloud a:hover {
-color: #ff3b2f;
-text-decoration: none;
-}
 .pride_pg a {
 text-decoration: none;
 }
@@ -2267,10 +2380,6 @@ line-height: 14px;
 display: inline-block;
 margin-bottom: 3px;
 color: #000;
-}
-.tagcloud a:hover {
-color: #ff3b2f;
-text-decoration: none;
 }
 .tagcloud a {
 background: none repeat scroll 0 0 #333;

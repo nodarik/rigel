@@ -14,7 +14,16 @@
             
             <div class="rigel_post_format_content">
                  <div class="rigel_post_format_content">
-					<?php esc_html(get_post_meta($post->ID, '_format_video_embed', true)); ?>
+					
+					           	<?php echo  wp_kses(get_post_meta($post->ID, '_format_video_embed', true), array(
+					'iframe' => array(
+						'width' => array(),
+						'height' => array(),
+						'src' => array(),
+						'frameborder' => array(),
+						'allowfullscreen' => array()
+						),
+					))?>
                 </div>
             </div>
             

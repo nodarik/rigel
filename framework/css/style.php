@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6:not(.rigel_blog_legend_descr), .title_medium, .title_larg
 		color: <?php echo esc_attr($rigel_opt_data['rigel_typo_headers']['color']) ?> !important;
 	}
 
-	.rigel_menu_content_holder > ul > li > a, .header_menu > li > .my_drop > ul > li > a { 
+	.rigel_menu_content_holder ul li a, .header_menu > li > .my_drop > ul > li > a { 
 	font-weight: <?php echo esc_attr($rigel_opt_data['rigel_typo_menu']['font-family']) ?> !important;
     font-family: <?php echo esc_attr($rigel_opt_data['rigel_typo_menu']['font-family']) ?> !important;
     font-size: <?php echo esc_attr($rigel_opt_data['rigel_typo_menu']['font-size']) ?> !important;
@@ -56,6 +56,18 @@ font-family: '<?php echo esc_attr($rigel_opt_data['rigel_typo_headers']['font-fa
 
 .title_bg:before{ background-color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important; }
 
+.awesome_title{
+   text-shadow: 5px 3px 0 #ffffff,
+   6px 4px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   4px 4px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   4px 2px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   5px 3px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   -1px 7px 0 #f2f1f1,
+   -2px 8px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   -2px 6px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   6px 2px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
+   0 8px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>;
+}
 
 .rigel_menu_content_holder > ul > li:hover > a {color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important;}
 .widget_price_filter .ui-slider .ui-slider-range, .eg-rigel-simple-shop-element-21, .eg-rigel-pricing-element-9 { background:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important}

@@ -1,6 +1,52 @@
 <?php $rigel_opt_data = get_option( 'rigel_opt_data' ); ?>
 <div class="rigel_header_holder header_v3  fixed_menu <?php if ($rigel_opt_data['fixed_header']) { ?> rigel_fixed_header <?php }?>">
-    <div class="first-row">
+	<?php if (($rigel_opt_data['top_social_networks_position']) !== "4") {?>
+					
+					<div class="top_header_bar">
+						<ul class="rigel_top_social_networks style_<?php echo esc_attr($rigel_opt_data['top_social_networks_position']) ?>">
+						
+										<?php if ($rigel_opt_data['footer_social_fb'] != "") {?>
+										<li>
+											
+											<span><a class="fa fa-facebook" href="<?php echo stripslashes($rigel_opt_data['footer_social_fb']) ?>"></a></span>
+										</li>
+										<?php }; ?>
+										
+										<?php if ($rigel_opt_data['footer_social_tw'] != "") {?>
+									<li>
+										
+										<span><a class="fa fa-twitter"  href="<?php echo stripslashes($rigel_opt_data['footer_social_tw']) ?>"></a></span>
+									</li>
+									<?php }; ?>
+									<?php if ($rigel_opt_data['footer_social_inst'] != "") {?>
+										<li>
+										
+										<span><a class="fa fa-instagram"  href="<?php echo stripslashes($rigel_opt_data['footer_social_inst']) ?>"></a></span>
+									</li>
+										<?php }; ?>
+										<?php if ($rigel_opt_data['footer_social_go'] != "") {?>
+										<li>
+										
+										<span><a class="fa fa-google-plus"  href="<?php echo stripslashes($rigel_opt_data['footer_social_go']) ?>"></a></span>
+									</li>
+									<?php }; ?>
+									<?php if ($rigel_opt_data['footer_social_pi'] != "") {?>
+										<li>
+										
+										<span><a class="fa fa-pinterest-p"  href="<?php echo stripslashes($rigel_opt_data['footer_social_pi']) ?>"></a></span>
+									</li>
+									<?php }; ?>
+									<?php if ($rigel_opt_data['footer_social_li'] != "") {?>
+										<li>
+										
+										<span><a class="fa fa-linkedin"  href="<?php echo stripslashes($rigel_opt_data['footer_social_li']) ?>"></a></span>
+									</li>
+									<?php }; ?>
+						</ul>
+					</div>
+			<?php }; ?>  
+
+  <div class="first-row">
         <div class="container">
             <div class="row">
 				<div class="rigel_logo_holdred col-xs-10">
