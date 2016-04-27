@@ -1183,6 +1183,11 @@ letter-spacing: 2px !important;
 display: block;
 margin: 0px;
 }
+.copyright-text h1, .copyright-text h2, .copyright-text h3, .copyright-text h4, .copyright-text h5, .copyright-text h6 {
+    margin-top: 0px;
+    font-size: 13px;
+	margin-bottom: 0px;
+}
 
 /**
 * 7.0 - Templates
