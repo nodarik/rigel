@@ -254,8 +254,8 @@ require_once('framework/plugin-activation.php');
 			array(
             'name'      => esc_html__('Redux Framework', 'rigel'),
             'slug'      => 'redux-framework',
-			'force_activation' 		=> true,
-            'required'  => true,
+			'force_activation' 		=> false,
+            'required'  => false,
         ),
 		);
 	
@@ -537,7 +537,7 @@ add_filter('widget_tag_cloud_args', 'rigel_tcr_tag_cloud_filter', 90);
 
 //PAGINATION
 function wp_corenavi() {
-  global $wp_query, $wp_rewrite;
+  global $wp_query;
   $pages = '';
   $max = $wp_query->max_num_pages;
   $a = array();
@@ -547,12 +547,6 @@ function wp_corenavi() {
 	   $a['add_args'] = array( 's' => str_replace(" ","+",get_query_var('s')), 'post_type' => get_query_var('post_type'));
   }
   
-  if($wp_rewrite->using_permalinks()){
-	$a['base'] = ''. esc_url(add_query_arg('paged','%#%'));
-  }else{
-  	$a['base'] = esc_url(add_query_arg('paged','%#%'));
-  }
-   
   $a['total'] = $max;
   $a['current'] = $current;
 
