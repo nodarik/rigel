@@ -85,6 +85,7 @@
 												'container' => '',
 												'theme_location' => 'main_menu',
 												'menu_class' => 'header_menu',
+												'depth' => 2,
 												'walker' => $walker
 						));
 						} else { echo wp_kses(_e('<div class="alert alert-success"><strong>Set up your FIRST menu</strong><br> Appearance -> Menus -> Create your menu -> Choose it in "Theme Location" block</div>', 'rigel'),array( 'strong' => array( ) ));}

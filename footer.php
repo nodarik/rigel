@@ -92,6 +92,7 @@
                         'container' => '',
                         'theme_location' => 'secondary_menu',
                         'menu_class' => 'rigel_footer_quote list-unstyled footer_menu',
+						'depth' => 1,
                     ));
                     } 
                     ?>
