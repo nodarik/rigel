@@ -90,7 +90,14 @@ jQuery.noConflict()(function($){
 	});
 });
 
-
+// add class to footer if we have chosen side menu
+jQuery.noConflict()(function($){
+if($('.header_v5').length != 0)
+{
+  $('.rigel_footer_custom_content').addClass('side_menu_v5');
+  $('.wide_cont').addClass('side_menu_v5');
+}
+});
 
 jQuery.noConflict()(function($){
 	$('#port_slider').flexslider({
