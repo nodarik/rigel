@@ -18,10 +18,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 
 	// Products per row
-	add_filter('loop_shop_columns', 'loop_columns');
+	add_filter('loop_shop_columns', 'rigel_loop_columns');
 	
-	if ( ! function_exists('loop_columns') ) {
-		function loop_columns() {
+	if ( ! function_exists('rigel_loop_columns') ) {
+		function rigel_loop_columns() {
 			return 3;
 		}
 	}

@@ -12,7 +12,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 	<div class="col-md-2 col-sm-2">
     	<div class="rigel_full_blog_post_date">
 				<a  href="<?php echo esc_url(the_permalink()); ?>">
-				<time class="rigel_date_d colored"><?php echo get_the_date( 'd M Y', $post->ID ); ?></time>
+				<time class="rigel_date_d colored"><?php echo wp_kses_post(get_the_date( 'd M Y', $post->ID )); ?></time>
 			</a>
 			
         </div>
@@ -54,7 +54,7 @@ if ( $title == esc_html__("Without Sidebar", 'rigel'))  $rigel_opt_data['blog_si
 	<div class="col-md-2">
     	<div class="rigel_full_blog_post_date" >
 				<a  href="<?php echo esc_url(the_permalink()); ?>">
-				<time class="rigel_date_d colored"><?php echo get_the_date( 'd M Y', $post->ID ); ?></time>
+				<time class="rigel_date_d colored"><?php echo wp_kses_post(get_the_date( 'd M Y', $post->ID )); ?></time>
 			</a>
 			
         </div>

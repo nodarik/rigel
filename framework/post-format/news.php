@@ -9,13 +9,9 @@
         </div>
 		<?php 
 		
-		if ( has_post_thumbnail() ) {
-	echo '<img class="img-responsive" src="'. esc_url($large_image_url[0]).'" alt="" />'."\n";
-}
+		if ( has_post_thumbnail() ) { ?>
 		
-
-
-		?>
+	<img class="img-responsive" src="  <?php 	. esc_url($large_image_url[0]).'" alt="" />'."\n"; ?>
 		
     </div>
     <div class="col-md-10 col-sm-9">
