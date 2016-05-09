@@ -56,6 +56,8 @@ font-family: '<?php echo esc_attr($rigel_opt_data['rigel_typo_headers']['font-fa
 
 .title_bg:before{ background-color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important; }
 
+.top_header_bar .rigel_top_social_networks li span a{ color:<?php echo esc_attr($rigel_opt_data['top_social_networks_color']) ?> !important; }
+
 .awesome_title{
    text-shadow: 5px 3px 0 #ffffff,
    6px 4px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,
@@ -132,6 +134,33 @@ background-size: <?php echo esc_attr($rigel_opt_data['footer_bg']['background-si
 background-attachment: <?php echo esc_attr($rigel_opt_data['footer_bg']['background-attachment']) ?>;
 background-color: <?php echo esc_attr($rigel_opt_data['footer_bg']['background-color']) ?>;
 }
+.side_menu .rigel_header_holder.header_v5, .header_v5 .header_menu > li > .my_drop  {
+background-image: url(<?php echo esc_url($rigel_opt_data['side_menu_bg']['background-image']) ?>);
+background-repeat: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-repeat']) ?>;
+background-position: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-position']) ?>;
+background-size: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-size']) ?>;
+background-attachment: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-attachment']) ?>;
+background-color: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-color']) ?>;
+}
+<?php if ($rigel_opt_data['full_height_submenu'] == true ){?>
+
+.header_v5 .header_menu > li > .my_drop:before {
+content: "";
+display: block;
+width: 100%;
+height: 5000px;
+position: absolute;
+top: -2000px;
+left: 0;
+z-index: -1;
+background-image: url(<?php echo esc_url($rigel_opt_data['side_menu_bg']['background-image']) ?>);
+background-repeat: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-repeat']) ?>;
+background-position: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-position']) ?>;
+background-size: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-size']) ?>;
+background-attachment: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-attachment']) ?>;
+background-color: <?php echo esc_attr($rigel_opt_data['side_menu_bg']['background-color']) ?>;
+}
+<?php };?>
 
 .rigel_strange_portfolio_item .rigel_mask {background-color:<?php echo esc_attr($rigel_opt_data['portfolio_thumbnail_bg_color']) ?> !important;}
 .rigel_mask .rigel_port_title, .rigel_small_descr, rigel_port_cats {color:<?php echo esc_attr($rigel_opt_data['portfolio_thumbnail_text_color']) ?> !important;}

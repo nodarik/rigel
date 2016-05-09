@@ -411,6 +411,13 @@ $sections[] = array(
                                 'off' => 'Disabled',
                            
                         ),
+					array(
+                        'id' => 'header_field_text_2',
+                        'type' => 'text',
+                        'title' => esc_html__('Logo Tagline', 'rigel') ,
+                        'default' => '',
+                        'subtitle' => esc_html__('Text will appear right to the logo, delete it if you dont want to use it', 'rigel') ,
+                ) ,
 					
 						$fields = array(
 							'id'       => 'top_social_networks_position',
@@ -427,6 +434,26 @@ $sections[] = array(
 							),
 							'default' => '4',
 						),
+						
+			 array(
+                        'id' => 'top_social_networks_color',
+                        'type' => 'color',
+                        'compiler' => true, // Use if you want to hook in your own CSS compiler
+                        'title' => esc_html__('Color for sicial icons in header', 'rigel') ,
+                        'subtitle' => esc_html__('Pick a color for the theme (default: #111).', 'rigel') ,
+                        'default' => '#111',
+                        'validate' => 'color',
+                ) ,
+				
+				         array(
+                                'id'       => 'search_in_header',
+                                'type'     => 'switch',
+                                'title'    => esc_html__('Display or hide search form', 'rigel'),
+                                'subtitle' => esc_html__('If enabled search form will be displayed', 'rigel'),
+                                'default'  => false,
+                                'on' => 'Enabled',
+                                'off' => 'Disabled',
+                      ),
 						
                 array(
                         'id' => 'header_layout',
@@ -449,6 +476,10 @@ $sections[] = array(
                                 ) ,
 							  'v4' => array(
 									'alt' => 'Header 4',
+									'img' => get_template_directory_uri() . '/framework/images/header4.png'
+							) ,
+									  'v5' => array(
+									'alt' => 'Header 5',
 									'img' => get_template_directory_uri() . '/framework/images/header4.png'
 							) ,
                         ) ,
@@ -487,15 +518,47 @@ $sections[] = array(
                                 ),
 
                 ) ,
-                array(
-                        'id' => 'header_field_text_2',
-                        'type' => 'text',
-                        'title' => esc_html__('Logo Tagline', 'rigel') ,
-                        'default' => '',
-                        'subtitle' => esc_html__('Text will appear right to the logo, delete it if you dont want to use it', 'rigel') ,
-                ) ,
+  
+				
+				     array(
+						'id'       => 'side_menu_bg',
+						'type'     => 'background',
+						'title'    => esc_html__('Side Menu Background', 'rigel'),
+						'subtitle' => esc_html__('Header background with image, color, etc.', 'rigel'),
+						'desc'     => esc_html__('Optional: Upload a Background Image for the side menu.', 'rigel'),
+						'default'  => array(
+							'background-color' => '#ffffff',
+						),
+						                     'required' => array(
+                                array(
+                                        'header_layout',
+                                        "=",
+                                        'v5'
+                                        )
+                                ),
+						),
+								
+						 array(
+                                'id'       => 'full_height_submenu',
+                                'type'     => 'switch',
+                                'title'    => esc_html__('enable full height submenu', 'rigel'),
+                                'subtitle' => esc_html__('If enabled submenus will be full height', 'rigel'),
+                                'default'  => false,
+                                'on' => 'Enabled',
+                                'off' => 'Disabled',
+                                'required' => array(
+									array(
+											'header_layout',
+											"=",
+											'v5'
+											)
+									),
+                        ),
+								
+	
+        ),
 
-        ) ,
+     
 );
 $sections[] = array(
         'title' => esc_html__('Social networks', "rigel") ,

@@ -92,13 +92,21 @@
                     } else { echo wp_kses(_e('<div class="alert alert-success"><strong>Set up your FIRST menu</strong><br> Appearance -> Menus -> Create your menu -> Choose it in "Theme Location" block</div>', 'rigel'),array( 'strong' => array( ) ));}
                     ?>
                 </div>
-                <div class="rigel_header_search col-md-3">
+				
+					<?php
+			if($rigel_opt_data['search_in_header']) {?>
+		
+	<div class="rigel_header_search col-md-3">
                             <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
                                 <input type="search" class="search-field" placeholder="<?php echo esc_html_e( ' ', 'rigel' ) ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_html_e( 'Search for:', 'rigel' ) ?>" />   
 								<input type="submit" class="search-submit" value=""/>
                             </form>
 							
                   </div>
+		
+			<?php } ?>
+				
+
             </div>
         </div>
     </div>
