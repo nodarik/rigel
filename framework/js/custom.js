@@ -91,12 +91,42 @@ jQuery.noConflict()(function($){
 });
 
 // add class to footer if we have chosen side menu
-jQuery.noConflict()(function($){
-if($('.header_v5').length != 0)
+$(document).ready(function() {
+if($('.side_menu').length != 0)
 {
   $('.rigel_footer_custom_content').addClass('side_menu_v5');
   $('.wide_cont').addClass('side_menu_v5');
+  
+   // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize < 1024) {
+		  $('.rigel_footer_custom_content').removeClass('side_menu_v5');
+		  $('.wide_cont').removeClass('side_menu_v5');
+		$('.rigel_header_holder').addClass('header_v2');
+		$('.rigel_header_holder').removeClass('header_v5');
+        }
+      if (windowsize > 1024) {
+          
+	  $('.rigel_footer_custom_content').addClass('side_menu_v5');
+	  $('.wide_cont').addClass('side_menu_v5');
+	   $('.rigel_header_holder').addClass('header_v5');
+       $('.rigel_header_holder').removeClass('header_v2');
+ 
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
 }
+});
+
+$(document).ready(function() {
+   
 });
 
 jQuery.noConflict()(function($){

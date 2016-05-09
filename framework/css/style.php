@@ -56,6 +56,8 @@ font-family: '<?php echo esc_attr($rigel_opt_data['rigel_typo_headers']['font-fa
 
 .title_bg:before{ background-color:<?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?> !important; }
 
+.top_header_bar .rigel_top_social_networks li span a{ color:<?php echo esc_attr($rigel_opt_data['top_social_networks_color']) ?> !important; }
+
 .awesome_title{
    text-shadow: 5px 3px 0 #ffffff,
    6px 4px 0 <?php echo esc_attr($rigel_opt_data['rigel_accent_color']) ?>,

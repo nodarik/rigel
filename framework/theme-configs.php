@@ -435,6 +435,26 @@ $sections[] = array(
 							'default' => '4',
 						),
 						
+			 array(
+                        'id' => 'top_social_networks_color',
+                        'type' => 'color',
+                        'compiler' => true, // Use if you want to hook in your own CSS compiler
+                        'title' => esc_html__('Color for sicial icons in header', 'rigel') ,
+                        'subtitle' => esc_html__('Pick a color for the theme (default: #111).', 'rigel') ,
+                        'default' => '#111',
+                        'validate' => 'color',
+                ) ,
+				
+				         array(
+                                'id'       => 'search_in_header',
+                                'type'     => 'switch',
+                                'title'    => esc_html__('Display or hide search form', 'rigel'),
+                                'subtitle' => esc_html__('If enabled search form will be displayed', 'rigel'),
+                                'default'  => false,
+                                'on' => 'Enabled',
+                                'off' => 'Disabled',
+                      ),
+						
                 array(
                         'id' => 'header_layout',
                         'type' => 'image_select',

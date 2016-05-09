@@ -678,10 +678,10 @@ text-align: center;
     padding: 0px;
 }
 .header_v5 .header_menu > li > .my_drop > ul > li > a {
-    padding: 15px;
+    padding: 5px 15px;
 }
-.bot-pos .header_v5 .rigel_menu_content_holder > ul > li > a {
-    padding: 20px;
+.bot-pos .header_v5 .rigel_menu_content_holder > ul > li > a, .header_v5 .rigel_menu_content_holder > ul > li > a {
+    padding: 5px 20px;
 }
 .bot-pos .header_v5.fixed_menu .first-row {
     display: block;
@@ -699,7 +699,7 @@ text-align: center;
 .header_v5 .top_header_bar {
 position: absolute;
     bottom: 30px;
-    border-top: 1px solid #E0E0E0;
+    border: none;
     width: 100%;
    
 }
@@ -709,7 +709,48 @@ position: absolute;
 .header_v5 .header_menu > li:hover > .my_drop ul li a:hover, .header_v5 .header_menu > li > .my_drop > ul > li > a {
     background: transparent;
 }
+.header_v5 .side_logo_tagline {
+	display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding-top: 15px;
+    font-size: 23px;
+}
+.header_v5 .first-row {
+    padding-top: 30px;
+}
+.header_v5 .side_rigel_logo_holdred {
+    text-align: left;
+    padding: 20px;
+}
+.header_v5 .side_rigel_logo_holdred a img {
+    width: 100%;
+}
+.header_v5 .rigel_menu_content_holder > ul > li.menu-item-has-children:after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #BDBDBD;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 39px;
+    vertical-align: middle;
+    position: absolute;
+}
+@media (max-width: 1024px) {
 
+.side_menu .rigel_menu_content_holder ul li a, .side_menu .rigel_menu_content_holder ul li a {
+    color: #000 !important;
+}
+.side_menu .rigel_menu_content_holder ul li a, .side_menu .header_menu > li > .my_drop > ul > li > a {
+    color: #000000 !important;
+}
+.side_menu .search-form {
+    display: none;
+}
+}
 	
 /*Top header bar*/
 .rigel_top_social_networks.style_1 {
@@ -729,11 +770,7 @@ position: absolute;
 	bottom: 20px;
     border-bottom: 1px solid #f1f1f1;
 }
-@media (max-width: 767px) and (min-width: 0px) {
-.top_header_bar {
-display:none;
-}
-}
+
 .top_header_bar .rigel_top_social_networks li {
     margin: auto 7px;
     position: relative;

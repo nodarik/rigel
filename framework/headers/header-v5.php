@@ -4,15 +4,14 @@
 
 
   <div class="first-row">
-        <div class="container">
-            <div class="row">
-				<div class="rigel_logo_holdred col-xs-10">
+   
+				<div class="side_rigel_logo_holdred">
                     <?php
 		if(isset($rigel_opt_data['rigel_logo_upload']['url']) && $rigel_opt_data['rigel_logo_upload']['url']) :?>
 		<a href="<?php echo esc_url(home_url('/')); ?>"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
 	<?php endif; ?>
 					
-						<a href="<?php echo esc_url(home_url('/')); ?>" class="logo_tagline"><?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?></a>
+						<a href="<?php echo esc_url(home_url('/')); ?>" class="side_logo_tagline"><?php echo  do_shortcode($rigel_opt_data['header_field_text_2']) ?></a>
                 </div>
                 <div class="rigel_menu_content_holder col-xs-2">
 				
@@ -20,26 +19,15 @@
                     <div id="menu-toggle"></div>
 					<div id="menu-word"><?php echo esc_html($rigel_opt_data['menu_word']); ?></div>
                     </a>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div class="second-row">
   
 
-			        <div class="rigel_header_search">
-                            <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
-                                <input type="search" class="search-field" placeholder="<?php echo esc_html_e( ' ', 'rigel' ) ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_html_e( 'Search for:', 'rigel' ) ?>" />   
-								<input type="submit" class="search-submit" value=""/>
-                            </form>
-							
-                  </div>
+			      
                 <div class="rigel_menu_content_holder">
-								<?php
-						if(isset($rigel_opt_data['rigel_logo_upload']['url']) && $rigel_opt_data['rigel_logo_upload']['url']) :?>
-						<a href="<?php echo esc_url(home_url('/')); ?>" class="secondary_logo"><img alt="" src="<?php echo esc_url($rigel_opt_data['rigel_logo_upload']['url']); ?>"/></a>
-					<?php endif; ?>
-					
+	
 								
 					
 					<?php if ( has_nav_menu( 'main_menu' ) ){
@@ -58,6 +46,20 @@
         
     
     </div>
+	<?php
+			if($rigel_opt_data['search_in_header']) {?>
+		
+	<div class="rigel_header_search">
+                            <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
+                                <input type="search" class="search-field" placeholder="<?php echo esc_html_e( ' ', 'rigel' ) ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_html_e( 'Search for:', 'rigel' ) ?>" />   
+								<input type="submit" class="search-submit" value=""/>
+                            </form>
+							
+                  </div>
+		
+			<?php } ?>
+	
+	 
 
 		<?php if (($rigel_opt_data['top_social_networks_position']) !== "4") {?>
 					
