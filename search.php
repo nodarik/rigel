@@ -4,7 +4,7 @@
             <div class="row">
                 <!--Page contetn-->
                 <div class="<?php if ($rigel_opt_data['blog_sidebar_position'] == esc_html__("Without Sidebar", "rigel")) { ?>col-md-12<?php } else { ?>col-md-8<?php }; if ($rigel_opt_data['blog_sidebar_position'] == esc_html__('Left Sidebar', 'rigel')){?> col-md-push-4<?php }; ?>">
-                    <h2><?php esc_html_e("Search Results for:","rigel"); ?> <strong class="colored"><?php esc_attr(get_search_query());?></strong></h2>
+                    <h2><?php esc_html_e("Search Results for:","rigel"); ?> <strong class="colored"><?php echo esc_attr(get_search_query());?></strong></h2>
                     <hr>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                      <div <?php post_class('row rigel_post'); ?> id="post-<?php the_ID(); ?>">

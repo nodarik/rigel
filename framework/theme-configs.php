@@ -480,7 +480,7 @@ $sections[] = array(
 							) ,
 									  'v5' => array(
 									'alt' => 'Header 5',
-									'img' => get_template_directory_uri() . '/framework/images/header4.png'
+									'img' => get_template_directory_uri() . '/framework/images/header5.png'
 							) ,
                         ) ,
                         'default' => 'v2'
